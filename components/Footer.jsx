@@ -202,8 +202,6 @@ const Footer = () => {
                             Rishikesh 249203
                             (Uttarakhand)
                         </p>
-
-
                     </div>
                 </div>
             </div>
@@ -216,7 +214,7 @@ const Footer = () => {
                             <AccordionContent className="text-gray-900 px-6 pb-6 pt-1 text-sm space-y-3">
                                 <p>
                                     <strong>Purchasing Policy</strong><br />
-                                    At Protos Adventures, we strive to offer a seamless and secure shopping experience. Our purchasing policy outlines everything you need to know when placing an order with us.
+                                    At Hotel Mahadev, we strive to offer a seamless and secure shopping experience. Our purchasing policy outlines everything you need to know when placing an order with us.
                                 </p>
 
                                 <ul className="list-disc list-inside space-y-2">
@@ -285,13 +283,13 @@ const Footer = () => {
                                     <li>
                                         <strong>8. Bulk or Custom Orders</strong><br />
                                         We welcome bulk purchases or custom requests (e.g., branded adventure kits, expedition gear).<br />
-                                        Contact our team at support@protosadventures.com for quotations and lead times.
+                                        Contact our team at hotelmahadev.rishikesh@gmail.com for quotations and lead times.
                                     </li>
 
                                     <li>
                                         <strong>9. Customer Support</strong>
                                         <ul className="list-disc list-inside ml-4">
-                                            <li>📧 Email: info@protosadventures.com</li>
+                                            <li>📧 Email: hotelmahadev.rishikesh@gmail.com</li>
                                             <li>☎ Call/WhatsApp: +91 9897289601</li>
                                             <li>🕒 Hours: Monday to Saturday, 10:00 AM – 6:00 PM IST</li>
                                         </ul>
@@ -313,7 +311,7 @@ const Footer = () => {
                 <CardContent className="flex flex-col lg:flex-row items-start justify-between">
                     <div className="text-justify">
                         <Image src="/logo.png" width={200} height={200} alt="footer" />
-                        <p className="text-green-900 font-semibold text-sm lg:w-[40vw] xl:w-[35vw] font-barlow mt-6">
+                        <p className="text-black font-semibold text-sm lg:w-[40vw] xl:w-[35vw] font-barlow mt-6">
                             PROTOS ADVENTURE is your go-to source for premium outdoor gear. As an authorized dealer of top global brands like Camp, NRS, Millet, Headrush, and Valandré, we offer high-performance equipment for every kind of adventure—water sports, expeditions, camping, and more.
                             <br />
 
@@ -323,7 +321,7 @@ const Footer = () => {
                             Explore our site for top-tier gear and handcrafted creations from the heart of Rishikesh.
 
                         </p>
-                        <p className="text-green-900 font-semibold text-sm lg:w-[40vw] xl:w-[35vw] font-barlow mt-5">Our website is your gateway to the heart of Rishikesh, offering rich and soulful handmade creations crafted by local artisans.</p>
+                        <p className="text-black font-semibold text-sm lg:w-[40vw] xl:w-[35vw] font-barlow mt-5">Our website is your gateway to the heart of Rishikesh, offering rich and soulful handmade creations crafted by local artisans.</p>
                     </div>
                     <div className="font-barlow mt-10 lg:mt-0">
                         <h1 className="font-semibold text-xl ">Subscribe to our newsletter</h1>
@@ -337,15 +335,15 @@ const Footer = () => {
                             />
                             <button
                                 type="submit"
-                                className="bg-green-900 text-white text-sm p-2 h-full"
+                                className="bg-red-500 text-white text-sm p-2 h-full"
                             >
                                 Subscribe
                             </button>
                         </form>
 
 
-                        <p className="text-green-900 text-sm lg:w-[30vw] xl:w-[20vw]  mt-6 font-semibold">Stay Informed. Stay Ahead.</p>
-                        <p className="text-green-900 text-sm lg:w-[30vw] xl:w-[23vw] font-semibold">Subscribe to our newsletter to get the latest updates.</p>
+                        <p className="text-black text-sm lg:w-[30vw] xl:w-[20vw]  mt-6 font-semibold">Stay Informed. Stay Ahead.</p>
+                        <p className="text-black text-sm lg:w-[30vw] xl:w-[23vw] font-semibold">Subscribe to our newsletter to get the latest updates.</p>
                     </div>
                 </CardContent>
                 <CardFooter className="mt-8 flex flex-col items-start md:w-fit">
@@ -361,7 +359,7 @@ const Footer = () => {
             </Card>
             <div className="flex flex-col lg:flex-row items-center justify-center max-w-[25rem] md:max-w-[60rem] xl:max-w-6xl mx-auto font-barlow">
                 <p className="text-white font-bold text-center my-4">
-                    &copy; <CurrentYear /> <Link href={'/'} className="font-bold text-white px-2">Protos Adventures.</Link>All rights reserved
+                    &copy; <CurrentYear /> <Link href={'/'} className="font-bold text-white px-2">Hotel Mahadev.</Link>All rights reserved
                 </p>
             </div>
         </footer >

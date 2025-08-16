@@ -105,14 +105,20 @@ const Header = () => {
               <div className="flex items-center gap-4">
                 <div className="flex items-center gap-4 px-2 border-r-2 border-black">
                   <Mail size={18} />
-                  <Link href={"mailto:himalayanwellnessretreats@gmail.com"}>
-                    <p className="text-sm font-semibold hover:underline">himalayanwellnessretreats@gmail.com</p>
+                  <Link href={"mailto:hotelmahadev.rishikesh@gmail.com"}>
+                    <p className="text-sm font-semibold hover:underline">hotelmahadev.rishikesh@gmail.com</p>
                   </Link>
                 </div>
-                <div className="border-r-2 border-black items-center flex h-6 pr-4">
+                <div className="border-r-2 gap-2 border-black items-center flex h-6 pr-4">
                   <Phone size={18} />
-                  <Link href={"tel:+918800854549"}>
-                    <p className="text-sm font-semibold tracking-widest hover:underline"> +91 8800854549</p>
+                  <Link href={"tel:+911354053504"}>
+                    <p className="text-sm font-semibold tracking-widest hover:underline"> +91 1354053504</p>
+                  </Link>
+                  <Link href={"tel:+919557701203"}>
+                    <p className="text-sm font-semibold tracking-widest hover:underline"> +91 9557701203</p>
+                  </Link>
+                  <Link href={"tel:+919927677716"}>
+                    <p className="text-sm font-semibold tracking-widest hover:underline"> +91 9927677716</p>
                   </Link>
                 </div>
               </div>
