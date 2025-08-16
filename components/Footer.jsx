@@ -22,7 +22,7 @@ const Footer = () => {
                 const data = await response.json()
                 setPages(data.pages)
             } catch (error) {
-                console.error("Error fetching pages:", error)
+                // console.error("Error fetching pages:", error)
             }
         }
         fetchPages()
@@ -42,7 +42,7 @@ const Footer = () => {
             });
             const data = await res.json();
             if (res.ok) {
-                toast.success("Thank you for Subscibing!", { style: { borderRadius: "10px", border: "2px solid green" } });
+                toast.success("Thank you for Subscribing!", { style: { borderRadius: "10px", border: "2px solid green" } });
                 e.target.reset();
             } else {
                 toast.error(data.message || "Subscription failed.", { style: { borderRadius: "10px", border: "2px solid red" } });
@@ -54,13 +54,14 @@ const Footer = () => {
 
     return (
         <footer className={`print:hidden ${pathName.includes('admin') && 'hidden'}
-         ${pathName.includes('artisan') && 'block'} ${pathName.includes('product') && 'block'} ${pathName.includes('customEnquiry') && 'hidden'} ${pathName.includes('checkout') && 'hidden'}  ${pathName.includes('category') && 'block'} py-4 text-white`} style={{ backgroundColor: 'rgb(0, 44, 54)' }}>
+         ${pathName.includes('artisan') && 'block'} ${pathName.includes('product') && 'block'} ${pathName.includes('customEnquiry') && 'hidden'} ${pathName.includes('checkout') && 'hidden'}  ${pathName.includes('category') && 'block'} bg-black py-4 text-white`}>
             {/* <div className="w-full flex justify-center pb-8">
                 <div className="h-[3px] bg-black w-full mx-auto px-4" />
             </div> */}
-            <div className="hidden md:flex flex-wrap lg:justify-between px-10 justify-start md:gap-20 lg:gap-0 gap-10 max-w-[22rem] md:maxw-[45rem] lg:max-w-[60rem] xl:max-w-6xl mx-auto">
+            <div className="hidden md:flex flex-wrap lg:justify-between px-5 justify-start md:gap-20 lg:gap-0 gap-12 max-w-[22rem] md:max-w-[80rem] lg:max-w-[50rem] xl:max-w-6xl mx-auto">
                 <div className="flex flex-col gap-2 px-5">
                     <h1 className="font-semibold text-xl my-4">Main Menu</h1>
+                    <Link href={'/'} className="block text-white font-barlow ">Home</Link>
                     {pages.filter(page => !page?.link?.includes('policy')).map(page => (
                         <Link key={page._id} href={page.url} className="block text-white font-barlow ">
                             {page.title}
@@ -80,153 +81,249 @@ const Footer = () => {
                 </div>
 
                 <div className="flex flex-col gap-2">
-                    <h1 className="font-semibold text-xl flex items-center gap-2 my-4"> More Inquiry</h1>
-                    <div className="flex items-center gap-4">
-                          <Link href={'tel:+91 8800854549'} className="my-1 gap-2 block rounded-full font-barlow text-white flex items-center">
-                        <Phone size={20} className="text-blue-600 " />
-                        +91 8800854549
-                    </Link>
-                    <Link href={'tel:+917060340176'} className="my-1 gap-2 block rounded-full font-barlow text-white flex items-center">
-                        Whats' app +91 7060340176 +91 9897515305
-                    </Link>
+                    <h1 className="font-semibold text-xl flex items-center gap-2"> More Inquiry</h1>
+                    <div className="flex md:flex-row flex-col items-center gap-2">
+                        <Link href={'tel:+911354053504'} className="gap-2 block rounded-full py-1 font-barlow text-white flex items-center">
+                            <Phone size={20} className="text-blue-600" />
+                            +91 1354053504
+                        </Link>
+                        <Link href={'tel:+919557701203'} className="gap-2 block rounded-full py-1 font-barlow text-white flex items-center">
+                            +91 9557701203
+                        </Link>
+                        <Link href={'tel:+919927677716'} className="gap-2 block rounded-full py-1 font-barlow text-white flex items-center">
+                            +91 9927677716
+                        </Link>
+
                     </div>
-                    <Link href={'mailto:himalayanwellnessretreats@gmail.com'} className="my-1 gap-2 block rounded-full font-barlow text-white flex items-center">
-                        <Send className="text-blue-600" size={20} />
-                        himalayanwellnessretreats@gmail.com
-                    </Link>
-                    <p className="my-1 gap-2 font-barlow text-white flex items-center">
-                        <MapPin className="text-blue-600" size={20} />
-                        Balak Nath Temple Street, Upper Tapovan,
-                        <br />
-                        Tehri Garhwal Rishikesh,Uttarakhand 249192
-                    </p>
+                    <div className="flex items-start gap-2">
+                        <div className=" py-1">
+                            <Send className="text-blue-600" size={20} />
+                        </div>
+                        <div className="flex flex-col items-start gap-1">
+
+                            <Link href={'mailto:hotelmahadev.rishikesh@gmail.com'} className="gap-2 block rounded-full font-barlow text-white flex items-center">
+                                hotelmahadev.rishikesh@gmail.com
+                            </Link>
+                        </div>
+                    </div>
+                    <div className="flex pt-2 items-start block flex-col gap-2">
+                        <p className="gap-2 font-barlow text-white flex items-start">
+                            <MapPin className="text-blue-600" size={20} />
+                            <span className="font-bold">Hotel
+                                <br />
+                                Address :
+                            </span>NH-7, Rishikesh Delhi Highway
+                            Above
+                            Reliance
+                            <br />
+                            Store
+                            Adjacent to
+                            Neem
+                            Karoli Temple
+                            <br />
+                            Rishikesh 249203
+                            (Uttarakhand)
+                        </p>
+
+                    </div>
                 </div>
             </div>
-            <div className="md:hidden block grid grid-cols-2 md:grid-cols-3 gap-2 lg:justify-between px-2 justify-start md:gap-20 lg:gap-0 max-w-[30rem] lg:max-w-[60rem] xl:max-w-6xl mx-auto">
+            <div className="md:hidden flex items-center gap-2 lg:justify-between justify-start px-5">
                 <div className="flex flex-col gap-2 px-2">
                     <h1 className="font-semibold text-xl my-4">Main Menu</h1>
+                    <Link href={'/'} className="text-sm block text-white font-barlow ">Home</Link>
                     {pages.filter(page => !page?.link?.includes('policy')).map(page => (
-                        <Link key={page._id} href={page.url} className="block text-white font-barlow ">
+                        <Link key={page._id} href={page.url} className="text-sm block text-white font-barlow ">
                             {page.title}
                         </Link>
                     ))}
-                    <Link href={'/contact'} className="block text-white font-barlow ">Contact</Link>
+                    <Link href={'/contact'} className="text-sm block text-white font-barlow ">Contact</Link>
                 </div>
 
                 <div className="flex flex-col gap-2 px-2">
                     <h1 className="font-semibold text-xl my-4">Our Policy</h1>
                     {pages.filter(page => page?.link?.includes('policy')).map(page => (
-                        <Link key={page._id} href={page.url} className="block text-white font-barlow">
+                        <Link key={page._id} href={page.url} className="text-sm block text-white font-barlow">
                             {page.title}
                         </Link>
                     ))}
-                    <Link href={'/faq'} className="block text-white font-barlow ">FAQ</Link>
+                    <Link href={'/faq'} className="text-sm block text-white font-barlow ">FAQ</Link>
                 </div>
             </div>
-            <div className="md:hidden flex flex-col gap-1 px-5 py-5">
-                <h1 className="font-semibold text-xl mb-2 flex items-center gap-2"> More Inquiry</h1>
-                <div className="flex items-center gap-4">
-                    <Link href={'tel:+91 8800854549'} className="my-1 gap-2 block rounded-full font-barlow text-white flex items-center">
-                        <Phone size={20} className="text-blue-600 " />
-                        +91 8800854549
-                    </Link>
-                    <Link href={'tel:+917060340176'} className="my-1 gap-2 block rounded-full font-barlow text-white flex items-center">
-                        Whats' app +91 7060340176 +91 9897515305
-                    </Link>
-                </div>
-                <Link href={'mailto:himalayanwellnessretreats@gmail.com'} className="my-1 gap-2 block rounded-full font-barlow text-white flex items-center">
-                    <Send className="text-blue-600" size={20} />
-                    himalayanwellnessretreats@gmail.com
-                </Link>
-                <p className="my-1 gap-2 font-barlow text-white flex items-center">
-                    <MapPin className="text-blue-600" size={20} />
-                    Balak Nath Temple Street, Upper Tapovan,
-                    <br />
-                    Tehri Garhwal Rishikesh,Uttarakhand 249192
-                </p>
-            </div>
+            <div className="md:hidden flex flex-col gap-1 p-5">
+                <h1 className="font-semibold text-xl flex items-center gap-2"> More Inquiry</h1>
+                <div className="flex items-start gap-2 py-2">
+                    <div className="py-2">
+                        <Phone size={15} className="text-blue-600" />
+                    </div>
+                    <div className="flex flex-col items-start gap-1">
+                        <Link href={'tel:+911354053504'} className="gap-2 block rounded-full py-1 font-barlow text-white flex items-center">
+                            +91 1354053504
+                        </Link>
+                        <Link href={'tel:+919557701203'} className="gap-2 block rounded-full py-1 font-barlow text-white flex items-center">
+                            +91 9557701203
+                        </Link>
+                        <Link href={'tel:+919927677716'} className="gap-2 block rounded-full py-1 font-barlow text-white flex items-center">
+                            +91 9927677716
+                        </Link>
 
+                    </div>
+                </div>
+                <div className="flex flex-row gap-2 items-start py-2">
+                    <div className="">
+                        <Send className="text-blue-600" size={18} />
+                    </div>
+                    <div className="flex items-start flex-col">
+
+                        <Link href={'mailto:hotelmahadev.rishikesh@gmail.com'} className="text-sm block rounded-full font-barlow text-white flex items-center gap-2">
+                            hotelmahadev.rishikesh@gmail.com
+                        </Link>
+                    </div>
+                </div>
+                <div className="flex items-start flex-row gap-2">
+                    <div className="py-2">
+
+                        <MapPin className="text-blue-600" size={15} />
+                    </div>
+                    <div className="flex items-start flex-col gap-2">
+                        <p className="gap-2 text-sm font-barlow text-white flex items-start">
+                            <span className="font-bold">Hotel
+                                <br />
+                                Address:
+                            </span>NH-7, Rishikesh Delhi Highway
+                            Above
+                            Reliance
+                            <br />
+                            Store
+                            Adjacent to
+                            Neem
+                            Karoli Temple
+                            <br />
+                            Rishikesh 249203
+                            (Uttarakhand)
+                        </p>
+
+
+                    </div>
+                </div>
+            </div>
             {/* Accordance Section */}
             <div className="w-full flex justify-center my-4">
-                <div className="md:w-[85%] w-full px-5 md:px-0">
+                <div className="w-[85%]">
                     <Accordion type="single" collapsible className="bg-[#fff] rounded-md  mb-8">
                         <AccordionItem value="item-1">
                             <AccordionTrigger className="text-black px-6 py-4 text-base ">IMPORTANT NOTICE</AccordionTrigger>
-                            <AccordionContent className="text-gray-900 px-6 pb-6 pt-1 text-sm">
-                                <strong>Terms &amp; House Rules – Himalayan Wellness Retreats</strong>
-                                <br />
-                                To ensure a serene, respectful, and fulfilling experience for all guests, we kindly request your adherence to the following terms and house rules:
-                                <ul className="list-decimal ml-6 mt-4 space-y-3">
+                            <AccordionContent className="text-gray-900 px-6 pb-6 pt-1 text-sm space-y-3">
+                                <p>
+                                    <strong>Purchasing Policy</strong><br />
+                                    At Protos Adventures, we strive to offer a seamless and secure shopping experience. Our purchasing policy outlines everything you need to know when placing an order with us.
+                                </p>
+
+                                <ul className="list-disc list-inside space-y-2">
                                     <li>
-                                        <strong>Booking &amp; Payment</strong>
-                                        <ul className="list-disc ml-5 mt-1">
-                                            <li>All bookings must be confirmed with an advance deposit (as per selected package).</li>
-                                            <li>The balance amount is payable upon arrival/check-in.</li>
-                                            <li>Accepted payment methods: Bank Transfer, UPI, or Cash.</li>
-                                            <li>Personal cheques are not accepted.</li>
+                                        <strong>1. Product Availability</strong><br />
+                                        We aim to keep our inventory up-to-date. However, due to demand, some items may go out of stock. In such cases:
+                                        <ul className="list-disc list-inside ml-4">
+                                            <li>You will be notified promptly.</li>
+                                            <li>We may offer an alternative or initiate a full refund as per your preference.</li>
                                         </ul>
                                     </li>
+
                                     <li>
-                                        <strong>Cancellation &amp; Rescheduling Policy</strong>
-                                        <ul className="list-disc ml-5 mt-1">
-                                            <li>Cancellations made 25+ days prior to arrival: <strong>100% refund</strong></li>
-                                            <li>Cancellations within 7 to 15 days: <strong>50% refund</strong></li>
-                                            <li>Cancellations made less than 7 days before arrival: <strong>Non-refundable</strong></li>
-                                            <li>In exceptional cases (e.g., emergencies, natural disruptions), rescheduling may be offered at our discretion.</li>
+                                        <strong>2. Order Placement</strong>
+                                        <ul className="list-disc list-inside ml-4">
+                                            <li>Select your items and proceed to checkout.</li>
+                                            <li>Provide accurate billing and shipping details.</li>
+                                            <li>Complete payment through our secure gateway.</li>
+                                        </ul>
+                                        <p className="ml-4">Note: Orders with incomplete or incorrect information may be delayed or canceled.</p>
+                                    </li>
+
+                                    <li>
+                                        <strong>3. Payment Methods</strong>
+                                        <ul className="list-disc list-inside ml-4">
+                                            <li>Credit/Debit Cards (Visa, MasterCard, etc.)</li>
+                                            <li>UPI / Wallets / Net Banking (for India)</li>
+                                            <li>PayPal / Razorpay / Stripe (International Orders)</li>
+                                        </ul>
+                                        <p className="ml-4">All transactions are encrypted and 100% secure.</p>
+                                    </li>
+
+                                    <li>
+                                        <strong>4. Order Confirmation</strong>
+                                        <ul className="list-disc list-inside ml-4">
+                                            <li>You will receive an email confirmation with your order number and details.</li>
+                                            <li>A separate email will be sent once the order is dispatched, along with tracking info.</li>
                                         </ul>
                                     </li>
+
                                     <li>
-                                        <strong>Check-In &amp; Check-Out</strong>
-                                        <ul className="list-disc ml-5 mt-1">
-                                            <li>Check-In: 12:00 PM onwards</li>
-                                            <li>Check-Out: By 10:00 AM</li>
-                                            <li>Early check-in and late check-out are subject to availability and may incur additional charges.</li>
+                                        <strong>5. Pricing & Taxes</strong>
+                                        <ul className="list-disc list-inside ml-4">
+                                            <li>All prices are listed in [INR/USD] and include applicable taxes unless otherwise stated.</li>
+                                            <li>Shipping charges, if any, will be calculated at checkout based on location and package size.</li>
+                                            <li>Promotional discounts cannot be combined unless explicitly stated.</li>
                                         </ul>
                                     </li>
+
                                     <li>
-                                        <strong>House Etiquette</strong>
-                                        <ul className="list-disc ml-5 mt-1">
-                                            <li>This is a wellness-focused, mindful environment. We encourage quietness during yoga, meditation, and evening hours.</li>
-                                            <li>Smoking, alcohol, and non-vegetarian food are strictly prohibited on the property.</li>
-                                            <li>Respectful behavior towards staff, fellow guests, and retreat space is expected.</li>
-                                            <li>Please inform us in advance of any allergies or dietary preferences.</li>
-                                            <li>Modest, comfortable clothing is recommended, especially during yoga, spiritual practices, or outdoor excursions.</li>
+                                        <strong>6. Cancellations</strong>
+                                        <ul className="list-disc list-inside ml-4">
+                                            <li>You may cancel your order within 12 hours of placing it or before shipment.</li>
+                                            <li>Once dispatched, orders cannot be canceled. Please refer to our Return Policy instead.</li>
                                         </ul>
                                     </li>
+
                                     <li>
-                                        <strong>Health &amp; Safety</strong>
-                                        <ul className="list-disc ml-5 mt-1">
-                                            <li>Guests are responsible for their own health and well-being. Please disclose any medical conditions at the time of booking.</li>
-                                            <li>We practice eco-conscious hospitality—help us conserve water, electricity, and reduce plastic use.</li>
-                                            <li>First aid is available onsite; a medical facility is within 15 minutes of the retreat.</li>
+                                        <strong>7. Fraud Prevention</strong>
+                                        <ul className="list-disc list-inside ml-4">
+                                            <li>We may verify orders manually for high-value purchases.</li>
+                                            <li>We reserve the right to cancel orders suspected of fraudulent activity, with or without notice.</li>
                                         </ul>
                                     </li>
+
                                     <li>
-                                        <strong>Photography &amp; Guest Privacy</strong>
-                                        <ul className="list-disc ml-5 mt-1">
-                                            <li>Kindly request permission before photographing staff, fellow guests, or sacred ceremonies.</li>
-                                            <li>We are committed to your privacy and will not share your personal information without consent.</li>
+                                        <strong>8. Bulk or Custom Orders</strong><br />
+                                        We welcome bulk purchases or custom requests (e.g., branded adventure kits, expedition gear).<br />
+                                        Contact our team at support@protosadventures.com for quotations and lead times.
+                                    </li>
+
+                                    <li>
+                                        <strong>9. Customer Support</strong>
+                                        <ul className="list-disc list-inside ml-4">
+                                            <li>📧 Email: info@protosadventures.com</li>
+                                            <li>☎ Call/WhatsApp: +91 9897289601</li>
+                                            <li>🕒 Hours: Monday to Saturday, 10:00 AM – 6:00 PM IST</li>
                                         </ul>
+                                    </li>
+
+                                    <li>
+                                        <strong>10. Acceptance of Policy</strong><br />
+                                        By placing an order on our website, you agree to the terms outlined in this Purchasing Policy.
                                     </li>
                                 </ul>
-                                <br />
-                                By confirming your booking with Himalayan Wellness Retreats, you agree to these terms and support our mission to provide a peaceful, safe, and spiritually enriching environment for all.
                             </AccordionContent>
+
                         </AccordionItem>
                     </Accordion>
                 </div>
             </div>
+
             <Card className="my-2 px-2 py-8 max-w-xl lg:max-w-4xl xl:max-w-7xl mx-auto">
                 <CardContent className="flex flex-col lg:flex-row items-start justify-between">
                     <div className="text-justify">
-                        <Image src="/logo.png" width={200} height={100} alt="footer" />
-                        <p className="text-black text-sm lg:w-[40vw] xl:w-[35vw] font-barlow mt-6">
-                            <span className="text-xl font-bold py-2">
-
-                                Experience the Essence of Himalayan Wellness
-                            </span>
+                        <Image src="/logo.png" width={200} height={200} alt="footer" />
+                        <p className="text-green-900 font-semibold text-sm lg:w-[40vw] xl:w-[35vw] font-barlow mt-6">
+                            PROTOS ADVENTURE is your go-to source for premium outdoor gear. As an authorized dealer of top global brands like Camp, NRS, Millet, Headrush, and Valandré, we offer high-performance equipment for every kind of adventure—water sports, expeditions, camping, and more.
                             <br />
-                            Reconnect with yourself in the serene embrace of the Himalayas. Our wellness retreat packages blend daily yoga and meditation, nourishing sattvic meals, and immersive cultural experiences. Enjoy peaceful accommodations with scenic views, guided nature walks, and visits to sacred sites like temples and the Ganga Aarti. Perfect for those seeking inner peace, healing, or a mindful escape — naturally and soulfully.</p>
+
+                            Beyond gear, we support outdoor businesses with smart, practical solutions. Whether you're exploring the wild or growing your gear shop, we've got you covered.
+                            <br />
+
+                            Explore our site for top-tier gear and handcrafted creations from the heart of Rishikesh.
+
+                        </p>
+                        <p className="text-green-900 font-semibold text-sm lg:w-[40vw] xl:w-[35vw] font-barlow mt-5">Our website is your gateway to the heart of Rishikesh, offering rich and soulful handmade creations crafted by local artisans.</p>
                     </div>
                     <div className="font-barlow mt-10 lg:mt-0">
                         <h1 className="font-semibold text-xl ">Subscribe to our newsletter</h1>
@@ -240,15 +337,15 @@ const Footer = () => {
                             />
                             <button
                                 type="submit"
-                                className="bg-red-600 text-white text-sm p-2 h-full"
+                                className="bg-green-900 text-white text-sm p-2 h-full"
                             >
                                 Subscribe
                             </button>
                         </form>
 
 
-                        <p className="text-black text-sm lg:w-[30vw] xl:w-[20vw]  mt-6">Stay Informed. Stay Ahead.</p>
-                        <p className="text-black text-sm lg:w-[30vw] xl:w-[23vw]">Subscribe to our newsletter to get the latest updates.</p>
+                        <p className="text-green-900 text-sm lg:w-[30vw] xl:w-[20vw]  mt-6 font-semibold">Stay Informed. Stay Ahead.</p>
+                        <p className="text-green-900 text-sm lg:w-[30vw] xl:w-[23vw] font-semibold">Subscribe to our newsletter to get the latest updates.</p>
                     </div>
                 </CardContent>
                 <CardFooter className="mt-8 flex flex-col items-start md:w-fit">
@@ -264,7 +361,7 @@ const Footer = () => {
             </Card>
             <div className="flex flex-col lg:flex-row items-center justify-center max-w-[25rem] md:max-w-[60rem] xl:max-w-6xl mx-auto font-barlow">
                 <p className="text-white font-bold text-center my-4">
-                    &copy; <CurrentYear /> <Link href={'/'} className="font-bold text-white">Himalayan Wellness Retreat</Link>. All rights reserved
+                    &copy; <CurrentYear /> <Link href={'/'} className="font-bold text-white px-2">Protos Adventures.</Link>All rights reserved
                 </p>
             </div>
         </footer >

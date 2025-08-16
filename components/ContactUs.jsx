@@ -116,37 +116,29 @@ const ContactUs = () => {
                                 Our experts are available to answer any questions you might have. We’ve got the answers.</span>
                         </p>
                         <div className="mb-4">
-                            <h3 className="font-bold text-xl md:text-2xl mb-2">Call Us</h3>
-                            <ul className="mb-2">
-                                <li className='flex flex-row gap-2'>
-                                    <a href="tel:+918800854549" className="hover:underline text-md md:text-xl">+91 8800854549</a>
-                                   
-                                </li>
-                            </ul>
-                        </div>
-  <div className="mb-4">
                             <h3 className="font-bold text-xl md:text-2xl mb-2">What's App</h3>
                             <ul className="mb-2">
                                 <li className='flex flex-row gap-2'>
-                                    <a href="tel:+917060340176" className="hover:underline text-md md:text-xl">+91 7060340176</a>
-                                   <a href="tel:+919897515305" className="hover:underline text-md md:text-xl">+91 9897515305</a>
+                                    <a href="tel:+911354053504" className="hover:underline text-md md:text-xl">+91 1354053504</a>
+                                    <a href="tel:+919557701203" className="hover:underline text-md md:text-xl">+91 9557701203</a>
+                                    <a href="tel:+919927677716" className="hover:underline text-md md:text-xl">+91 9927677716</a>
                                 </li>
                             </ul>
                         </div>
 
-                        
+
                         <div className=''>
                             <h3 className="font-bold text-xl md:text-2xl mb-2 ">E-mail</h3>
                             <ul className="mb-2">
                                 <li className='text-md md:text-xl'>
                                     For Official:
-                                    <a href="mailto:himalayanwellnessretreats@gmail.com" className="hover:underline text-sm md:text-xl"> himalayanwellnessretreats@gmail.com</a>
+                                    <a href="mailto:hotelmahadev.rishikesh@gmail.com" className="hover:underline text-sm md:text-xl"> hotelmahadev.rishikesh@gmail.com</a>
                                 </li>
                             </ul>
                         </div>
-                        <div className='my-2'>
+                        {/* <div className='my-2'>
                             <a href="https://maps.app.goo.gl/ZGJ9ivjmABr6rzkt9" className="hover:underline text-xl"><h3 className="font-bold text-md md:text-2xl mb-2 ">Google https://share.google/OYCgclP5zh8SDEh1Q </h3></a>
-                        </div>
+                        </div> */}
                     </div>
                     {/* Contact Form */}
                     <div className="lg:w-1/2 w-full flex justify-center items-center">
@@ -224,7 +216,7 @@ const ContactUs = () => {
             {/* Google Maps */}
             <div className="w-full mt-10 flex justify-center">
                 <div className="w-full md:h-[400px] h-[250px] w-full overflow-hidden ">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d110486.44319936309!2d78.11853922973108!3d30.074093952521892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39091779b4cdc119%3A0x687dc67a4b8a2153!2sHimalayan%20Wellness%20Retreats!5e0!3m2!1sen!2sin!4v1751524996887!5m2!1sen!2sin" width="100%" height="100%" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Himalayan Wellness Retreats "></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3452.7547732689013!2d78.24997907534608!3d30.07256297490944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39093e613805600d%3A0xa1788222feaefdc0!2sHotel%20Mahadev%20Rishikesh!5e0!3m2!1sen!2sin!4v1755248020637!5m2!1sen!2sin" width="100%" height="100%" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Hotel Mahadev Rishikesh"></iframe>
                 </div>
             </div>
         </div>
