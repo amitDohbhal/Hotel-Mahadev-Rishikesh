@@ -207,101 +207,70 @@ const Footer = () => {
             </div>
             {/* Accordance Section */}
             <div className="w-full flex justify-center my-4">
-                <div className="w-[85%]">
+                <div className="md:w-[85%] w-full px-5 md:px-0">
                     <Accordion type="single" collapsible className="bg-[#fff] rounded-md  mb-8">
                         <AccordionItem value="item-1">
                             <AccordionTrigger className="text-black px-6 py-4 text-base ">IMPORTANT NOTICE</AccordionTrigger>
-                            <AccordionContent className="text-gray-900 px-6 pb-6 pt-1 text-sm space-y-3">
-                                <p>
-                                    <strong>Purchasing Policy</strong><br />
-                                    At Hotel Mahadev, we strive to offer a seamless and secure shopping experience. Our purchasing policy outlines everything you need to know when placing an order with us.
-                                </p>
-
-                                <ul className="list-disc list-inside space-y-2">
+                            <AccordionContent className="text-gray-900 px-6 pb-6 pt-1 text-sm">
+                                <strong>Terms &amp; House Rules Hotel Mahadev</strong>
+                                <br />
+                                To ensure a serene, respectful, and fulfilling experience for all guests, we kindly request your adherence to the following terms and house rules:
+                                <ul className="list-decimal ml-6 mt-4 space-y-3">
                                     <li>
-                                        <strong>1. Product Availability</strong><br />
-                                        We aim to keep our inventory up-to-date. However, due to demand, some items may go out of stock. In such cases:
-                                        <ul className="list-disc list-inside ml-4">
-                                            <li>You will be notified promptly.</li>
-                                            <li>We may offer an alternative or initiate a full refund as per your preference.</li>
+                                        <strong>Booking &amp; Payment</strong>
+                                        <ul className="list-disc ml-5 mt-1">
+                                            <li>All bookings must be confirmed with an advance deposit (as per selected package).</li>
+                                            <li>The balance amount is payable upon arrival/check-in.</li>
+                                            <li>Accepted payment methods: Bank Transfer, UPI, or Cash.</li>
+                                            <li>Personal cheques are not accepted.</li>
                                         </ul>
                                     </li>
-
                                     <li>
-                                        <strong>2. Order Placement</strong>
-                                        <ul className="list-disc list-inside ml-4">
-                                            <li>Select your items and proceed to checkout.</li>
-                                            <li>Provide accurate billing and shipping details.</li>
-                                            <li>Complete payment through our secure gateway.</li>
-                                        </ul>
-                                        <p className="ml-4">Note: Orders with incomplete or incorrect information may be delayed or canceled.</p>
-                                    </li>
-
-                                    <li>
-                                        <strong>3. Payment Methods</strong>
-                                        <ul className="list-disc list-inside ml-4">
-                                            <li>Credit/Debit Cards (Visa, MasterCard, etc.)</li>
-                                            <li>UPI / Wallets / Net Banking (for India)</li>
-                                            <li>PayPal / Razorpay / Stripe (International Orders)</li>
-                                        </ul>
-                                        <p className="ml-4">All transactions are encrypted and 100% secure.</p>
-                                    </li>
-
-                                    <li>
-                                        <strong>4. Order Confirmation</strong>
-                                        <ul className="list-disc list-inside ml-4">
-                                            <li>You will receive an email confirmation with your order number and details.</li>
-                                            <li>A separate email will be sent once the order is dispatched, along with tracking info.</li>
+                                        <strong>Cancellation &amp; Rescheduling Policy</strong>
+                                        <ul className="list-disc ml-5 mt-1">
+                                            <li>Cancellations made 25+ days prior to arrival: <strong>100% refund</strong></li>
+                                            <li>Cancellations within 7 to 15 days: <strong>50% refund</strong></li>
+                                            <li>Cancellations made less than 7 days before arrival: <strong>Non-refundable</strong></li>
+                                            <li>In exceptional cases (e.g., emergencies, natural disruptions), rescheduling may be offered at our discretion.</li>
                                         </ul>
                                     </li>
-
                                     <li>
-                                        <strong>5. Pricing & Taxes</strong>
-                                        <ul className="list-disc list-inside ml-4">
-                                            <li>All prices are listed in [INR/USD] and include applicable taxes unless otherwise stated.</li>
-                                            <li>Shipping charges, if any, will be calculated at checkout based on location and package size.</li>
-                                            <li>Promotional discounts cannot be combined unless explicitly stated.</li>
+                                        <strong>Check-In &amp; Check-Out</strong>
+                                        <ul className="list-disc ml-5 mt-1">
+                                            <li>Check-In: 12:00 PM onwards</li>
+                                            <li>Check-Out: By 10:00 AM</li>
+                                            <li>Early check-in and late check-out are subject to availability and may incur additional charges.</li>
                                         </ul>
                                     </li>
-
                                     <li>
-                                        <strong>6. Cancellations</strong>
-                                        <ul className="list-disc list-inside ml-4">
-                                            <li>You may cancel your order within 12 hours of placing it or before shipment.</li>
-                                            <li>Once dispatched, orders cannot be canceled. Please refer to our Return Policy instead.</li>
+                                        <strong>House Etiquette</strong>
+                                        <ul className="list-disc ml-5 mt-1">
+                                            <li>This is a wellness-focused, mindful environment. We encourage quietness during yoga, meditation, and evening hours.</li>
+                                            <li>Smoking, alcohol, and non-vegetarian food are strictly prohibited on the property.</li>
+                                            <li>Respectful behavior towards staff, fellow guests, and retreat space is expected.</li>
+                                            <li>Please inform us in advance of any allergies or dietary preferences.</li>
+                                            <li>Modest, comfortable clothing is recommended, especially during yoga, spiritual practices, or outdoor excursions.</li>
                                         </ul>
                                     </li>
-
                                     <li>
-                                        <strong>7. Fraud Prevention</strong>
-                                        <ul className="list-disc list-inside ml-4">
-                                            <li>We may verify orders manually for high-value purchases.</li>
-                                            <li>We reserve the right to cancel orders suspected of fraudulent activity, with or without notice.</li>
+                                        <strong>Health &amp; Safety</strong>
+                                        <ul className="list-disc ml-5 mt-1">
+                                            <li>Guests are responsible for their own health and well-being. Please disclose any medical conditions at the time of booking.</li>
+                                            <li>We practice eco-conscious hospitality—help us conserve water, electricity, and reduce plastic use.</li>
+                                            <li>First aid is available onsite; a medical facility is within 15 minutes of the retreat.</li>
                                         </ul>
                                     </li>
-
                                     <li>
-                                        <strong>8. Bulk or Custom Orders</strong><br />
-                                        We welcome bulk purchases or custom requests (e.g., branded adventure kits, expedition gear).<br />
-                                        Contact our team at hotelmahadev.rishikesh@gmail.com for quotations and lead times.
-                                    </li>
-
-                                    <li>
-                                        <strong>9. Customer Support</strong>
-                                        <ul className="list-disc list-inside ml-4">
-                                            <li>📧 Email: hotelmahadev.rishikesh@gmail.com</li>
-                                            <li>☎ Call/WhatsApp: +91 9897289601</li>
-                                            <li>🕒 Hours: Monday to Saturday, 10:00 AM – 6:00 PM IST</li>
+                                        <strong>Photography &amp; Guest Privacy</strong>
+                                        <ul className="list-disc ml-5 mt-1">
+                                            <li>Kindly request permission before photographing staff, fellow guests, or sacred ceremonies.</li>
+                                            <li>We are committed to your privacy and will not share your personal information without consent.</li>
                                         </ul>
-                                    </li>
-
-                                    <li>
-                                        <strong>10. Acceptance of Policy</strong><br />
-                                        By placing an order on our website, you agree to the terms outlined in this Purchasing Policy.
                                     </li>
                                 </ul>
+                                <br />
+                                By confirming your booking with Hotel Mahadev, you agree to these terms and support our mission to provide a peaceful, safe, and spiritually enriching environment for all.
                             </AccordionContent>
-
                         </AccordionItem>
                     </Accordion>
                 </div>
@@ -312,13 +281,11 @@ const Footer = () => {
                     <div className="text-justify">
                         <Image src="/logo.png" width={200} height={200} alt="footer" />
                         <p className="text-black font-semibold text-sm lg:w-[40vw] xl:w-[35vw] font-barlow mt-6">
-                            PROTOS ADVENTURE is your go-to source for premium outdoor gear. As an authorized dealer of top global brands like Camp, NRS, Millet, Headrush, and Valandré, we offer high-performance equipment for every kind of adventure—water sports, expeditions, camping, and more.
+                            ✨ At Hotel Mahadev Rishikesh, we offer more than a stay—we offer an awakening. Reconnect with yourself in the lap of the Himalayas, where warm hospitality, nourishing meals, and soulful experiences await. Explore Rishikesh’s sacred charm with guided walks, temple visits, and the mesmerizing Ganga Aarti, then return to serene accommodations that breathe peace into your journey.
                             <br />
-
-                            Beyond gear, we support outdoor businesses with smart, practical solutions. Whether you're exploring the wild or growing your gear shop, we've got you covered.
+                            🌿 Step into our Deluxe Premium Rooms, where comfort meets elegance. With spacious living areas, rich wooden flooring, and large windows opening to nature’s light, every detail is designed to exceed expectations—ensuring an unforgettable experience.
                             <br />
-
-                            Explore our site for top-tier gear and handcrafted creations from the heart of Rishikesh.
+                            🙏 Thank you for choosing Hotel Mahadev Rishikesh. May your stay be as memorable as it is enriching.
 
                         </p>
                         <p className="text-black font-semibold text-sm lg:w-[40vw] xl:w-[35vw] font-barlow mt-5">Our website is your gateway to the heart of Rishikesh, offering rich and soulful handmade creations crafted by local artisans.</p>

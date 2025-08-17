@@ -108,11 +108,13 @@ const ContactUs = () => {
                 <div className="flex flex-col lg:flex-row gap-8 w-full justify-center mt-10 md:px-20 px-10">
                     {/* Contact Info */}
                     <div className="lg:w-1/2 w-full flex flex-col justify-center text-black">
-                        <h2 className="pacifico-h2 text-2xl md:text-5xl text-green-800 mb-4">DISCOVER US</h2>
+                        <span className="underline text-xl md:text-3xl">Thank you for choosing Hotel Mahadev (Rishikesh). May your stay be as memorable as it is enriching.
+                        </span>
+                        <br />
                         <p className="mb-6 text-base">
-                            <span className="underline text-xl md:text-3xl">Himalayan Wellness Retreats is here to help you.</span>
+                            <span className="text-xl md:text-2xl">Hotel Mahadev Rishikesh is here to help you.</span>
                             <br />
-                            <span className='text-xl md:text-3xl'>
+                            <span className='text-xl md:text-xl'>
                                 Our experts are available to answer any questions you might have. We’ve got the answers.</span>
                         </p>
                         <div className="mb-4">

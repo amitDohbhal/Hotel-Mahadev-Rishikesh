@@ -70,16 +70,15 @@ const AboutUsSection = () => {
         <section className="bg-[#f8f9f6] relative py-10 w-full px-10 md:px-5 overflow-hidden max-w-screen overflow-x-hidden">
             <div className="w-full">
                 <h2 className="pacifico-h2 text-green-800 text-xl md:text-3xl  text-center mt-2 md:mt-7 uppercase">
-                    <span className="">Experience the Soul of Himalayan Wellness in Rishikesh,</span>
+                    <span className="">Stay Blessed in the Heart of Rishikesh.</span>
                 </h2>
                 <p className="text-md font-lg md:text-xl text-center mt-2">
-                    emphasizes uniqueness, tradition, artistry, and authentic
+                    Rest. Rejoice. Reconnect in Rishikesh.
                 </p>
                 <hr className="h-[2px] md:w-[50%] mx-auto bg-black" />
 
                 <p className="text-gray-600 md:py-8 py-4 text-center font-barlow md:w-[55%] w-full mx-auto">
-                    Experience the Soul of Himalayan Wellness
-                    Escape to the spiritual heart of Tapovan, Rishikesh — where sacred serenity meets the flowing grace of the Ganges. At Himalayan Wellness Retreats, each day is a blend of mindful yoga, nourishing satvic meals, and soul-stirring experiences like Ganga Aarti, temple visits, and Himalayan walks. Stay in serene accommodations with stunning views, guided by the rhythms of nature and inner peace.
+                    “At Hotel Mahadev Rishikesh, every moment is crafted to offer you more than just a stay—it’s an experience. Nestled in the serene beauty of the Himalayas and blessed by the sacred Ganga, we bring together comfort, warmth, and divine tranquility. Whether you seek relaxation, adventure, or spiritual connection, your journey begins with us—where hospitality meets harmony.”
                     <br />
                     <br />
                     Reconnect. Realign. Rejuvenate — in the Yoga Capital of the World.

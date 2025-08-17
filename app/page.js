@@ -16,7 +16,7 @@ export default async function Home() {
       <Boxes />
       <AboutUsSection />
       <Banner />
-      <RandomTourPackageSection />  
+      {/* <RandomTourPackageSection />   */}
       <InstaBlog />
       <Social/>
       <ChatBot/>

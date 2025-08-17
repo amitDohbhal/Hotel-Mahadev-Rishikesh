@@ -44,9 +44,9 @@ const Team = () => {
           <div className="flex flex-col lg:flex-row gap-8 mb-10 items-start">
             {/* Left: Heading and Paragraph */}
             <div className="w-full lg:w-[60%]">
-              <h2 className="pacifico-h2 text-green-800 text-xl md:text-4xl my-4">Experience You Can Trust. Where Expertise Meets Himalayan Spirit.</h2>
+              <h2 className="pacifico-h2 text-green-800 text-xl md:text-4xl my-4">Experience You Can Trust. Where Expertise Meets Himalayan Spirit.</h2>
               <p className="md:text-xl text-gray-700 mb-4 w-full lg:w-[90%]">
-                At Himalayan Wellness Retreats, our strength lies in the wisdom and dedication of our core team — a collective of experienced teachers, compassionate healers, and inspiring mentors. Each expert brings years of training in traditional practices such as yoga, meditation, Ayurveda, and holistic therapies, rooted in the sacred traditions of the Himalayas. More than instructors, they are soulful guides committed to your personal growth and well-being. With a deep understanding of ancient knowledge and a modern approach to healing, they create a nurturing environment where transformation begins — mindfully, gently, and authentically.
+                In the hotel industry, true strength lies in the dedication and vision of its management teams — passionate hoteliers and hospitality professionals who combine expertise in guest care, operations, and service excellence. More than managers, they are hosts who create environments where every guest feels valued, comfortable, and connected. With a balance of global standards and local traditions, effective hotel management ensures that each stay is not just about accommodation, but about delivering authentic, memorable, and enriching experiences.
               </p>
             </div>
             {/* Right: Two Images in a row (first two team members) */}
@@ -109,20 +109,24 @@ const Team = () => {
             ) : null}
           </div>
           <div className="mb-10 md:text-base text-gray-700">
-            These individuals have not only mastered the ancient science of yoga but have also played a pivotal role in nurturing the spiritual and personal growth of others. With years of dedicated practice and teaching, they have created transformative experiences, launched community-based wellness initiatives, and inspired a new generation of mindful living. Their deep understanding of yogic philosophy, holistic wellness, and sustainable practices ensures that every session goes beyond physical postures — offering a journey into balance, awareness, and inner peace, while staying true to the Himalayan spirit.
+            In the Hotel Mahadev, true strength lies in the dedication and vision of its management teams — passionate hoteliers and hospitality professionals who bring expertise in guest care, operations, and service excellence. From the very first welcome, guests are embraced with warmth, comfort, and a sense of belonging. Beyond accommodations, management ensures that every stay becomes a journey of discovery—inviting guests to explore local culture, cuisine, and unique experiences that leave lasting impressions.
           </div>
 
           {/* Contributions Section */}
           <div className="rounded-xl md:p-8 p-4 border border-gray-400">
-            <h2 className="pacifico-h2 text-green-800 text-xl md:text-3xl mb-4 text-gray-800">Our Team’s Impact – Nurturing Wellness & Uplifting Communities:</h2>
+            <h2 className="pacifico-h2 text-green-800 text-xl md:text-3xl mb-4 text-gray-800">Our Team’s Impact: Hospitality Beyond Service, Impact Beyond Stay.
+            </h2>
             <ul className="list-decimal md:pl-6 p-2 text-base text-gray-700 space-y-2">
               <span className="">At Himalayan Yoga Wellness Retreats, our team’s work extends far beyond the mat. Rooted in service and community upliftment, their contributions have helped shape a more holistic and sustainable wellness experience for all:</span>
-              <li><span className="font-bold"> Mentoring and Training:</span> Our yoga experts have guided and mentored hundreds of aspiring practitioners and wellness facilitators, empowering the next generation through focused `training and authentic teachings in and around Rishikesh.</li>
-              <li><span className="font-bold"> Empowering Communities:</span> Through collaborative wellness programs, our team has supported local artisans and wellness workers — helping them access ethical markets, increase their income, and achieve greater financial independence.</li>
-              <li><span className="font-bold"> Innovation with Tradition: </span> By blending ancient yogic wisdom with contemporary wellness needs, our team ensures that every retreat remains both spiritually rooted and globally relevant.
+              <li><span className="font-bold">Warm Welcomes :</span> From the very first greeting, our team ensures guests feel valued, comfortable, and at home. Every smile, gesture, and detail reflects our commitment to heartfelt hospitality.
+                : Our yoga experts have guided and mentored hundreds of aspiring practitioners and wellness facilitators, empowering the next generation through focused `training and authentic teachings in and around Rishikesh.</li>
+              <li><span className="font-bold"> Seamless Stays:</span>  Behind the scenes, our dedicated staff work tirelessly to create smooth, stress-free experiences—ensuring every stay is marked by comfort, care, and efficiency.
               </li>
-              <li><span className="font-bold">Creating Global Milestones:</span>From hosting international retreats to participating in cross-cultural collaborations, our team has played a key role in bringing Rishikesh’s soulful wellness traditions to a global audience.</li>
-              <li><span className="font-bold">Committed to a Sustainable Future:</span>More than just experts, they are changemakers. With their vision and dedication, our retreats not only preserve Himalayan heritage but also create meaningful opportunities for local communities to thrive.</li>
+              <li><span className="font-bold"> Local Connection: </span> By blending ancient yogic wisdom with contemporary wellness needs, our team ensures that every retreat remains both spiritually rooted and globally relevant.Our team bridges global hospitality with local traditions, offering guests authentic cultural experiences, guided explorations, and a true taste of the destination.
+              </li>
+              <li><span className="font-bold">Personalized Care:</span> We believe no two guests are alike. With thoughtful attention to detail, our team tailors every service to meet individual needs, creating memories that last.
+              </li>
+              <li><span className="font-bold">Lasting Impressions:</span>More than a stay, our people create moments of joy, peace, and connection—impacting not just guest satisfaction, but their journey of wellness, discovery, and renewal.</li>
             </ul>
           </div>
         </div>

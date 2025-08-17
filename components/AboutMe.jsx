@@ -6,26 +6,42 @@ import './fonts/fonts.css';
 const accordionData = [
   {
     title: "What Makes Us Unique?",
-    content: `Nestled in the serene foothills of the Himalayas, our wellness retreats offer more than just a break — they provide a deep journey into holistic healing and self-discovery. What sets us apart is our blend of traditional Himalayan wisdom and modern wellness practices. From yoga and meditation guided by experienced gurus to Ayurvedic therapies using locally sourced herbs, every experience is rooted in authenticity. Located in the spiritual heart of Rishikesh, our retreats offer peaceful surroundings, organic meals, and personalized care — creating a sanctuary where mind, body, and soul reconnect in harmony.`
-  },
-  {
-    title: "Sustainable & Eco-Friendly",
-    content: `At Himalayan Wellness Retreats, sustainability is not just a practice — it's a way of life. Our retreats are designed to harmonize with nature, using eco-friendly infrastructure, locally sourced organic food, and zero-plastic policies. We support local artisans and communities, ensuring that your stay contributes to the region’s well-being. Every guest is welcomed like family, with warm hospitality and personalized care that reflects the spirit of the Himalayas. Here, your journey to wellness is gentle on the earth and deeply enriching for the soul.`
-  },
-  {
-    title: "Empowering Local Artisans",
-    content: `At Himalayan Wellness Retreats, we believe that wellness is a journey for everyone — whether you're just beginning or have years of experience. Our programs are thoughtfully designed to meet you where you are. Beginners are gently guided with patience and clarity, while seasoned practitioners are offered deeper insights and advanced practices. Through expert instruction, mindful support, and an inclusive atmosphere, we empower every individual to grow, heal, and reconnect with their inner self at their own pace — all in the nurturing embrace of the Himalayas.`
-  },
-  {
-    title: "Cultural Preservation",
-    content: `At Himalayan Wellness Retreats, cultural preservation is at the heart of our mission. We are deeply rooted in the traditions of the Himalayas, and we strive to keep this rich heritage alive through every experience we offer. From ancient yoga and meditation practices to Ayurvedic healing, Vedic rituals, and local art forms, we embrace and share the timeless wisdom of our ancestors. By collaborating with local communities, healers, and artisans, we not only protect these traditions but also empower the people who carry them forward — ensuring they thrive for generations to come.`
+    content: `1:   What Makes Us Unique?  
+
+What sets us apart is the perfect blend of soulful surroundings, heartfelt hospitality, and enriching experiences. Nestled in the serene Himalayas by the sacred Ganga, we offer more than just comfortable stays—our guided walks, temple visits, soulful meals, and eco-conscious practices create a journey of peace and connection. Every detail is designed to rejuvenate your mind, body, and spirit, making your stay truly unforgettable.
+
+⦁	Comfortable & spacious rooms with modern amenities
+⦁	Multi-cuisine dining with fresh, flavorful meals
+⦁	Guided nature walks & local sightseeing tours
+⦁	Sacred experiences like Ganga Aarti & temple visits
+⦁	Wellness activities for relaxation & rejuvenation
+⦁	Warm hospitality with personalized care`
   },
   {
     title: "Global Accessibility with Local Roots",
-    content: `Himalayan Wellness Retreats bridges the gap between ancient traditions and modern lifestyles, offering globally accessible wellness experiences deeply rooted in local Himalayan culture. Whether you’re joining us from across the world or nearby, our retreats are designed to be inclusive, welcoming, and easy to access. While we open our doors to international seekers of peace and balance, we remain firmly connected to our local roots — celebrating regional wisdom, supporting indigenous communities, and preserving the authenticity that makes our retreats truly unique.
+    content: `We bring the world to Rishikesh while staying deeply connected to its soul. With modern comforts, seamless connectivity, and world-class hospitality, our hotel welcomes guests from across the globe—yet every experience is rooted in the warmth, spirituality, and traditions of Rishikesh.
 
-We sincerely thank you for being part of our journey to preserve Himalayan heritage and empower both seasoned practitioners and those just beginning their wellness path. Your support helps us sustain ancient traditions, uplift local communities, and create an inclusive space where everyone can heal, grow, and thrive — rooted in authenticity, guided by purpose.`
-  }
+⦁	Seamless Connectivity – Easily accessible with modern travel links, welcoming guests from across the world.
+⦁	World-Class Hospitality – International service standards blended with warm Indian traditions.
+⦁	Cultural Immersion – Experiences rooted in Rishikesh’s spirituality, yoga, and heritage.
+⦁	Authentic Local Flavors – Fresh, regional cuisine prepared with a homely touch.
+⦁	Modern Comforts, Traditional Values – Luxurious stays with a soulful essence of the Himalayas.
+⦁	Personalized Experiences – Tailored services that combine global expectations with local care.`
+  },
+//   {
+//     title: "Empowering Local Artisans",
+//     content: `At Himalayan Wellness Retreats, we believe that wellness is a journey for everyone — whether you're just beginning or have years of experience. Our programs are thoughtfully designed to meet you where you are. Beginners are gently guided with patience and clarity, while seasoned practitioners are offered deeper insights and advanced practices. Through expert instruction, mindful support, and an inclusive atmosphere, we empower every individual to grow, heal, and reconnect with their inner self at their own pace — all in the nurturing embrace of the Himalayas.`
+//   },
+//   {
+//     title: "Cultural Preservation",
+//     content: `At Himalayan Wellness Retreats, cultural preservation is at the heart of our mission. We are deeply rooted in the traditions of the Himalayas, and we strive to keep this rich heritage alive through every experience we offer. From ancient yoga and meditation practices to Ayurvedic healing, Vedic rituals, and local art forms, we embrace and share the timeless wisdom of our ancestors. By collaborating with local communities, healers, and artisans, we not only protect these traditions but also empower the people who carry them forward — ensuring they thrive for generations to come.`
+//   },
+//   {
+//     title: "Global Accessibility with Local Roots",
+//     content: `Himalayan Wellness Retreats bridges the gap between ancient traditions and modern lifestyles, offering globally accessible wellness experiences deeply rooted in local Himalayan culture. Whether you’re joining us from across the world or nearby, our retreats are designed to be inclusive, welcoming, and easy to access. While we open our doors to international seekers of peace and balance, we remain firmly connected to our local roots — celebrating regional wisdom, supporting indigenous communities, and preserving the authenticity that makes our retreats truly unique.
+
+// We sincerely thank you for being part of our journey to preserve Himalayan heritage and empower both seasoned practitioners and those just beginning their wellness path. Your support helps us sustain ancient traditions, uplift local communities, and create an inclusive space where everyone can heal, grow, and thrive — rooted in authenticity, guided by purpose.`
+//   }
 ];
 const AboutMe = () => {
   const [openIndex, setOpenIndex] = useState(0);
@@ -33,7 +49,7 @@ const AboutMe = () => {
   return (
     <div className="w-full min-h-screen bg-[#fcf7f1]">
       {/* Banner */}
-      <div className="relative w-full md:h-[350px] h-[100px] flex items-center justify-center bg-secondary">
+      <div className="relative w-full md:h-[450px] h-[100px] flex items-center justify-center bg-secondary">
         <Image
           src="/bg1.jpg"
           alt="About Banner"
@@ -49,11 +65,11 @@ const AboutMe = () => {
             {/* Left: Text and Accordion */}
             <div className="lg:w-1/2 w-full flex flex-col justify-center overflow-y-auto">
               <div className="mb-8">
-                <h2 className="pacifico-h2 text-green-800 text-xl md:text-3xl md:mb-6 mb-4">"Breathe. Stretch. Transform. Find Your Flow, Feel Your Peace."</h2>
+                <h2 className="pacifico-h2 text-green-800 text-xl md:text-3xl md:mb-6 mb-4">"Stay Blessed in the Heart of Rishikesh."</h2>
                 <p className="md:text-lg text-md text-gray-700 leading-relaxed mb-6">
-                  Himalayan Wellness Retreats invites you to a transformative journey nestled in the spiritual heartland of Tapovan, Rishikesh — where the charm of the sacred city meets the serene rhythm of the Ganges. Known as the Yoga Capital of the World, Rishikesh offers the perfect backdrop for inner healing, mindful living, and soulful exploration. Our thoughtfully curated retreats are designed to rejuvenate your body, mind, and spirit amidst the majestic Himalayan landscape. Each day begins with revitalizing yoga and meditation sessions led by experienced instructors, followed by nourishing yogic meals prepared from fresh, organic ingredients.<br /><br />
-                  Immerse yourself in the local lifestyle as you explore ancient temples, vibrant artisan markets, and the awe-inspiring Ganga Aarti — all just steps away from our peaceful retreat in Tapovan. Guests enjoy serene accommodations with stunning views, nature walks, and spiritual excursions that connect you deeply with the essence of the region. Whether you seek inner peace, spiritual growth, or simply a conscious escape, Himalayan Wellness Retreats in Rishikesh offers a sacred space to reconnect—with yourself, with nature, and with the divine flow of life.<br /><br />
-                  Explore the Spirit of Rishikesh — Where Every Breath is a Step Toward Wholeness.<br /><br />
+                  A hotel is more than a place to stay—it’s an experience that welcomes you with comfort, care, and connection. Whether you’re here for leisure, business, or relaxation, our blend of warm hospitality, thoughtful amenities, and elegant accommodations ensures a truly memorable escape. Step into a sanctuary designed to refresh your mind and uplift your spirit. From restful rooms and delicious dining to personalized services that cater to your every need, every detail at our hotel is dedicated to making your stay seamless, rejuvenating, and unforgettable.
+                  <br /><br />
+                  Forget the weather, fatigue, and worries—this is your time to relax, rejuvenate, and reconnect with yourself. From luxury to luxurious, every moment at our resort is dedicated to your wellness. Indulge in our exclusive treatments and embrace a new level of vitality.<br /><br />
                 </p>
               </div>
 

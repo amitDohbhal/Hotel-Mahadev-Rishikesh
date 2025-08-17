@@ -7,27 +7,11 @@ import './fonts/fonts.css';
 const accordionData = [
   {
     title: "What Sets Us Apart:",
-    content: "We are committed to curating authentic, soul-nourishing wellness experiences that spark personal transformation and holistic healing.Through a thoughtfully crafted blend of yoga, meditation, Ayurvedic therapies, and nature-based healing, we create immersive retreats that go beyond relaxation—they awaken self-awareness, restore balance, and promote long-term well-being.\n\nOur programmes are grounded in the rich spiritual and cultural heritage of Rishikesh, and guided by experienced practitioners who honor ancient traditions while adapting to individual needs.\n\nWe incorporate local wisdom, sustainable practices, and community involvement, ensuring that our retreats not only serve our guests, but also uplift the environment and local livelihoods.By connecting people back to the rhythms of nature and inner stillness, we inspire a way of life rooted in mindfulness, compassion, and sustainability—helping individuals return home with tools for lasting wellness, and a deeper connection to themselves and the world around them."
+    content: "What sets us apart is the way we blend heartfelt hospitality with soulful experiences. At Hotel Mahadev Rishikesh, every stay goes beyond comfort—inviting you to reconnect with yourself in the serene embrace of the Himalayas. From peaceful accommodations and nourishing meals to guided walks, temple visits, and the sacred Ganga Aarti, we create moments that are authentic, mindful, and memorable. With a balance of modern comforts and local traditions, we ensure your stay is not just enjoyable, but truly enriching."
   },
   {
-    title: "Yoga & Meditation",
-    content: "Daily yoga sessions are at the heart of our retreats. Led by experienced and certified instructors, our classes blend Hatha, Ashtanga, and restorative yoga, paired with guided meditation and pranayama (breathwork) to enhance inner calm, flexibility, and focus.\n\n• Morning & evening yoga sessions\n• Meditation for stress release and mental clarity\n• Special focus on alignment, breath, and mindfulness"
-  },
-  {
-    title: "Ayurvedic Therapies",
-    content: "We incorporate ancient Ayurvedic healing practices to rejuvenate the body and restore balance. Our therapies are tailored to your dosha (body constitution) and health goals.\n\n• Abhyanga (full body oil massage)\n• Shirodhara (oil stream therapy for mental peace)\n• Herbal detox and wellness consultations"
-  },
-  {
-    title: "Nature Walks & Himalayan Trails",
-    content: "Surrounded by the sacred Ganga and lush green hills, our nature-based experiences reconnect you with the earth.\n\n• Peaceful morning nature walks\n• Sunset hikes\n• Ganga-side meditations\n\nThese activities foster deep reflection and emotional release."
-  },
-  {
-    title: "Accommodation for Yogic Lifestyle",
-    content: "Our retreat offers serene and comfortable accommodation options, designed to support a simple, sattvic (pure) lifestyle. Rooms are clean, minimal, and infused with natural elements to encourage restful sleep and peace of mind.\n\n• Private & shared rooms with attached bath\n• Yogic vegetarian meals (sattvic food)\n• Peaceful ambiance for digital detox"
-  },
-  {
-    title: "Wellness Retreat Packages",
-    content: "We offer flexible retreat durations to suit your availability and wellness goals:\n\n• 3-Day Introductory Retreat – A short yet refreshing break for beginners\n• 5-Day Rejuvenation Retreat – Ideal for balancing mind, body & energy\n• 7-Day Deep Wellness Journey – Includes full program with yoga, therapies, and excursions\n• 15-Day Transformational Retreat – For serious practitioners seeking deep healing, discipline, and renewal\n\nAll packages include:\n- Yoga classes\n- Meals\n- Accommodation\n- Ayurveda therapy sessions\n- Guided outdoor activities"
+    title: "Luxury Accommodation",
+    content: "Experience comfort redefined in our elegantly designed rooms, where modern luxury meets timeless charm. Spacious interiors, rich details, and serene views of the Himalayas create a perfect balance of relaxation and sophistication. Every corner is crafted with care, ensuring your stay is as peaceful as it is indulgent."
   },
 ];
 
@@ -66,28 +50,29 @@ const WhatWeDo = () => {
             {/* Left Side */}
             <div className="lg:w-7/12 w-full">
               <div className=" p-8 md:mb-8">
-                <h4 className="pacifico-h2 text-green-800 text-xl md:text-2xl md:text-3xl mb-4">Wellness Retreats – A Sanctuary in Nature.</h4>
+                <h4 className="pacifico-h2 text-green-800 text-xl md:text-2xl md:text-3xl mb-4">“Turning Stays into Experiences.”</h4>
                 <p className="md:text-base text-gray-700 mb-4">
-                  At our Wellness Retreats in Tapovan, Rishikesh, we offer a complete and immersive wellness experience that nurtures the body, mind, and soul. Whether you're a beginner or an advanced practitioner, our programs are designed to guide you on a journey of inner healing and mindful living—amidst the spiritual energy of the Himalayas. <br /><br />
-
+                At our hotel, we do more than provide a place to rest—we create meaningful experiences. From warm welcomes and comfortable stays to guided explorations, soulful dining, and personalized services, every detail is crafted to make your journey memorable. We blend global standards with local traditions to ensure every guest feels valued, connected, and truly at home.<br /><br />
                 </p>
                 <div className="max-w-xl mx-auto px-6 py-4 border border-gray-300 rounded-2xl relative">
                   <blockquote className="relative">
                     <h2 className="text-2xl md:text-3xl font-bold mb-4 text-gray-900">Why Choose Us?</h2>
-
                     <ul className="space-y-3 text-gray-800 font-medium list-none">
-                      <li>• Located in the spiritual hub of Rishikesh, near the sacred Ganga</li>
-                      <li>• Led by experienced yoga teachers and wellness professionals</li>
-                      <li>• Authentic practices rooted in ancient Indian traditions</li>
-                      <li>• Personalized approach to wellness and healing</li>
-                      <li>• Clean, serene, and eco-conscious accommodation</li>
+                      <li>• Prime Location – Nestled in the serene beauty of the Himalayas and close to the sacred Ganga</li>
+                      <li>• Heartfelt Hospitality – More than service, we welcome you with warmth and care.</li>
+                      <li>• Comfort & Luxury – Spacious rooms, modern amenities, and peaceful surroundings.
+                      </li>
+                      <li>• Authentic Experiences – Guided walks, temple visits, cultural immersion, and soulful dining</li>
+                      <li>• Wellness & Rejuvenation – A stay designed to refresh your mind, body, and spirit.
+                      </li>
+                      <li>• Wellness & Rejuvenation – A stay designed to refresh your mind, body, and spirit.
+                      Clean, serene, and eco-conscious accommodation</li>
                     </ul>
 
                     <div className="flex justify-between items-center mt-6">
                       <div className="flex gap-2">
                         <hr className="my-6 border-t border-black w-10" />
                         <img src="/A1.jpg" alt="Logo Image" className="h-16 w-auto" />
-
                       </div>
 
                       <span className="md:text-7xl text-5xl text-black font-serif">”</span>
@@ -144,7 +129,7 @@ const WhatWeDo = () => {
             <div className="lg:w-5/12 w-full flex items-center justify-center sticky top-20 self-start p-10 md:p-0">
               <div className="w-full max-w-md rounded-xl overflow-hidden bg-white shadow-lg">
                 <Image
-                  src="/image.png"
+                  src="/what.jpg"
                   alt="Rishikesh"
                   width={600}
                   height={800}
