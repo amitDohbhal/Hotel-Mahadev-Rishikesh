@@ -117,7 +117,7 @@ const Team = () => {
             <h2 className="pacifico-h2 text-green-800 text-xl md:text-3xl mb-4 text-gray-800">Our Team’s Impact: Hospitality Beyond Service, Impact Beyond Stay.
             </h2>
             <ul className="list-decimal md:pl-6 p-2 text-base text-gray-700 space-y-2">
-              <span className="">At Himalayan Yoga Wellness Retreats, our team’s work extends far beyond the mat. Rooted in service and community upliftment, their contributions have helped shape a more holistic and sustainable wellness experience for all:</span>
+              <span className="">At Hotel Mahadev, our team’s work extends far beyond the mat. Rooted in service and community upliftment, their contributions have helped shape a more holistic and sustainable wellness experience for all:</span>
               <li><span className="font-bold">Warm Welcomes :</span> From the very first greeting, our team ensures guests feel valued, comfortable, and at home. Every smile, gesture, and detail reflects our commitment to heartfelt hospitality.
                 : Our yoga experts have guided and mentored hundreds of aspiring practitioners and wellness facilitators, empowering the next generation through focused `training and authentic teachings in and around Rishikesh.</li>
               <li><span className="font-bold"> Seamless Stays:</span>  Behind the scenes, our dedicated staff work tirelessly to create smooth, stress-free experiences—ensuring every stay is marked by comfort, care, and efficiency.

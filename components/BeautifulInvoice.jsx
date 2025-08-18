@@ -10,10 +10,10 @@ export default function BeautifulInvoice({ booking, bookingId, bookingDate,invoi
   // Extract booking details
   const guest = booking || {};
   const hotel = {
-    name: "Himalayan Wellness Retreat",
+    name: "Hotel Mahadev Rishikesh",
     address: "Rishikesh, Uttarakhand 249201, India",
     phone: "+91 9897515305",
-    email: "himalayanwellnessretreats@gmail.com",
+    email: "hotelmahadev.rishikesh@gmail.com",
   };
 
   // Example: you may want to adjust these fields to match your backend
@@ -41,8 +41,8 @@ export default function BeautifulInvoice({ booking, bookingId, bookingDate,invoi
       <div style={{ background: 'white', color: 'black', padding: 24, borderTopLeftRadius: 12, borderTopRightRadius: 12 }}>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center',gap:"5px" }}>
           <div> 
-            <img src="https://www.himalayanwellnessretreats.com/logo.png" alt="Logo" style={{ height: 40, marginBottom: 8 }} />
-            <div style={{ fontWeight: 700, fontSize: 15, letterSpacing: 1 }}>HIMALAYAN WELLNESS RETREAT</div>
+            <img src="https://www.hotelmahadevrishikesh.com/logo.png" alt="Logo" style={{ height: 40, marginBottom: 8 }} />
+            <div style={{ fontWeight: 700, fontSize: 15, letterSpacing: 1 }}>HOTEL MAHDEV RISHIKESH</div>
             <div style={{ fontSize: 13, marginTop: 4 }}>{hotel.phone}</div> 
              <div style={{ fontSize: 13, marginTop: 4 }}>{hotel.email}</div>
           </div>

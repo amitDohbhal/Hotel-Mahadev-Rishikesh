@@ -85,7 +85,7 @@ const productQnA = [
     subQuestions: [
       {
         q: "How do I request a refund or return?",
-        a: "To request a refund, please email us at himalayanwellnessretreats@gmail.com within 24 hours of delivery/booking confirmation. We will guide you through the return process."
+        a: "To request a refund, please email us at hotelmahadev.rishikesh@gmail.com within 24 hours of delivery/booking confirmation. We will guide you through the return process."
       },
       {
         q: "What’s the refund eligibility period?",
@@ -265,7 +265,7 @@ const productQnA = [
   },
   {
     q: "Talk to Support",
-    a: `Yes, our customer support is available [Days & Hours]. You can also email us at himalayanwellnessretreat@gmail.com or call +91 9897515305, 7060340176`
+    a: `Yes, our customer support is available [Days & Hours]. You can also email us at hotelmahadev.rishikesh@gmail.com or call +91 9897515305, 7060340176`
   }
 ];
 

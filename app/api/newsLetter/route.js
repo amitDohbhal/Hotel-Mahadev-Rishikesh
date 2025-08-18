@@ -37,7 +37,7 @@ export async function POST(req) {
             'content-type': 'application/json'
           },
           body: JSON.stringify({
-            sender: { name: 'Himalayan Wellness Retreat', email: 'himalayanwellnessretreats@gmail.com' },
+            sender: { name: 'Hotel Mahadev', email: 'hotelmahadev.rishikesh@gmail.com' },
             to: [{ email }],
             subject: 'Thank You for Subscribing – Get Ready for Exclusive Deals!',
             htmlContent: `<div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; background: #ffffff;">
@@ -80,13 +80,13 @@ export async function POST(req) {
       <!-- Logo Cell -->
       <td width="120" align="center" valign="middle" style="background: #d9d9d9; padding: 10px;">
         <span style="color: #555; font-size: 16px;">
-        <img src="https://himalayanwellnessretreats.com/logo.png" width="100" height="80" alt="Logo">
+        <img src="https://hotelmahadevrishikesh.com/logo.png" width="100" height="80" alt="Logo">
         </span>
       </td>
 
       <!-- Contact Info -->
       <td style="padding-left: 20px; font-family: Arial, sans-serif;">
-        <div style="font-size: 16px; font-weight: bold; color: #333;">Himalayan Wellness Retreat</div>
+        <div style="font-size: 16px; font-weight: bold; color: #333;">Hotel Mahadev</div>
 
         <table style="margin-top: 10px;">
           <tr>
@@ -95,16 +95,15 @@ export async function POST(req) {
               <img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" width="20" style="vertical-align: middle; margin-right: 5px;">
             </td>
             <td style="font-size: 14px; color: #555;">
-              himalayanwellnessretreat@gmail.com<br>
+              https://hotelmahadevrishikesh.com<br>
               <span style="font-size: 18px; font-weight: bold; color: #4a3f00;">9897515305</span>
             </td>
           </tr>
         </table>
 
         <div style="font-size: 13px; color: #000; margin-top: 5px; font-weight: 600;">
-          Balak Nath Temple Street, Upper Tapovan,
-                        <br />
-                        Tehri Garhwal Rishikesh,Uttarakhand 249201
+          Hotel Address: NH-7, Rishikesh Delhi Highway
+Above Reliance Store, Adjacent to Neem Karoli Temple Rishikesh 249203 (Uttarakhand)
         </div>
       </td>
     </tr>
@@ -114,7 +113,7 @@ export async function POST(req) {
 <!-- Footer -->
 <div style="background: #cccccc; padding: 20px 20px; text-align: center; font-family: Arial, sans-serif;">
   <div style="font-size: 14px; color: #000; font-weight: 600; margin-bottom: 5px;">
-    www.himalayanwellnessretreats.com
+    www.hotelmahadevrishikesh.com
   </div>
   <div style="font-size: 12px; color: #333; margin-bottom: 15px;">
     You’re receiving this email because you subscribed to updates from Us.<br>

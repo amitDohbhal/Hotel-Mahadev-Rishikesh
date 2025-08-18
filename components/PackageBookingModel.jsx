@@ -366,7 +366,7 @@ const PackageBookingModel = ({ packages, onClose, type }) => {
                             headers: { 'Content-Type': 'application/json' },
                             body: JSON.stringify({
                                 to: form.email,
-                                subject: `Your Booking Confirmation - ${packages?.title || 'Himalayan Wellness Retreat'}`,
+                                subject: `Your Booking Confirmation - ${packages?.title || 'Hotel Mahadev'}`,
                                 htmlContent: invoiceHtml,
                             })
                         });
@@ -854,7 +854,7 @@ const PackageBookingModel = ({ packages, onClose, type }) => {
                                     key: process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID,
                                     amount: orderData.amount,
                                     currency: orderData.currency,
-                                    name: 'Himalayan Wellness Retreat',
+                                    name: 'Hotel Mahadev',
                                     description: `Booking for ${packages?.title}`,
                                     order_id: orderData.id,
                                     handler: async function (response) {

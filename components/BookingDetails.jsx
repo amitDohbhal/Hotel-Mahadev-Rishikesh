@@ -627,7 +627,7 @@ const BookingDetails = ({ room, onClose, type }) => {
                                             key: process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID,
                                             amount: orderData.amount,
                                             currency: orderData.currency,
-                                            name: 'Himalayan Wellness Retreat',
+                                            name: 'Hotel Mahadev Rishikesh',
                                             description: `Booking for ${room?.title || 'Room'}`,
                                             order_id: orderData.id,
                                             handler: async function (response) {
@@ -705,7 +705,7 @@ const BookingDetails = ({ room, onClose, type }) => {
                                                                 headers: { 'Content-Type': 'application/json' },
                                                                 body: JSON.stringify({
                                                                     to: form.email,
-                                                                    subject: `Your Booking Confirmation - ${room?.title || 'Himalayan Wellness Retreat'}`,
+                                                                    subject: `Your Booking Confirmation - ${room?.title || 'HOtel Mahadev'}`,
                                                                     invoiceNumber: invoiceNumber,
                                                                     htmlContent: invoiceHtml,
                                                                 })

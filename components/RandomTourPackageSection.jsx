@@ -56,7 +56,7 @@ const RandomTourPackageSection = () => {
                 <h2 className="pacifico-h2 text-green-800 text-2xl md:text-3xl lg:text-4xl text-start mb-5 uppercase">Who We Are</h2>
                 <h2 className="text-xl font-bold mb-2">Guided Yoga & Meditation with Experienced Instructors</h2>
                 <div className="text-md text-gray-700 text-justify mb-6">
-                  At Himalayan Wellness Retreats, every session is more than just practice — it's a path to personal transformation. Our yoga and meditation programs are led by a team of experienced, certified instructors who bring deep wisdom, compassion, and authenticity to every class. Guided with mindfulness and rooted in traditional yogic principles, each session is tailored to support your physical, mental, and spiritual well-being.
+                  At Hotel Mahadev, every session is more than just practice — it's a path to personal transformation. Our yoga and meditation programs are led by a team of experienced, certified instructors who bring deep wisdom, compassion, and authenticity to every class. Guided with mindfulness and rooted in traditional yogic principles, each session is tailored to support your physical, mental, and spiritual well-being.
                   <br />
 
                   Our instructors, supported by a dedicated retreat management team, share a unified vision of holistic healing and conscious living. Together, we aim to create a nurturing space where every guest can realign with their inner self, awaken clarity, and carry the essence of Himalayan wellness into every day life.

@@ -45,7 +45,7 @@ export async function POST(req) {
     const emailRecipients = uniqueEmails.map(email => ({ email }))
 
     const emailData = {
-      sender: { name: "Himalayan Wellness Retreats", email: "himalayanwellnessretreats@gmail.com" },
+      sender: { name: "Hotel Mahadev ", email: "hotelmahadev.rishikesh@gmail.com" },
       to: emailRecipients,
       subject,
       htmlContent: `
@@ -94,8 +94,8 @@ export async function POST(req) {
                     <!-- Header -->
                     <tr>
                         <td style="padding: 30px 0; text-align: center; background-color:rgb(176, 176, 176); border-top-left-radius: 8px; border-top-right-radius: 8px;">
-                            <a href="https://himalayanwellnessretreats.com/" class="header">
-            <img src="https://himalayanwellnessretreats.com/logo.png" alt="Himalayan Wellness Retreats Logo">
+                            <a href="https://hotelmahadevrishikesh.com/" class="header">
+            <img src="https://hotelmahadevrishikesh.com/logo.png" alt="Hotel Mahadev Logo">
         </a>
                             <h1 style="color: #ffffff; margin: 0; margin-top:12px; font-size: 24px;">Promotional Email</h1>
                         </td>
@@ -114,8 +114,8 @@ export async function POST(req) {
                             <p>Working hours:</p>
                             <p>MON to SAT : 9:30AM - 08:00 PM</p>
                             <p>Sunday Closed</p>
-            <p>If you have any questions, feel free to contact: <a href="mailto:himalayanwellnessretreats@gmail.com">himalayanwellnessretreats@gmail.com</a>.</p>
-            <p>&copy; ${new Date().getFullYear()} Himalayan Wellness Retreats. All rights reserved.</p>
+            <p>If you have any questions, feel free to contact: <a href="mailto:hotelmahadev.rishikesh@gmail.com">hotelmahadev.rishikesh@gmail.com</a>.</p>
+            <p>&copy; ${new Date().getFullYear()} Hotel Mahadev. All rights reserved.</p>
         </div>
                         </td>
                     </tr>
@@ -129,6 +129,8 @@ export async function POST(req) {
       `
     };
 
+    // Debug: Check if API key is loaded
+    // console.log("BREVO_API_KEY loaded:",process.env.BREVO_API_KEY);
     const response = await axios.post("https://api.brevo.com/v3/smtp/email", emailData, {
       headers: {
         "api-key": process.env.BREVO_API_KEY,

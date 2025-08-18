@@ -10,40 +10,38 @@ import GoogleTranslate from "@/components/GoogleTranslate";
 
 
 export const metadata = {
-  metadataBase: new URL("https://www.himalayanwellnessretreats.com/"),
+  metadataBase: new URL("https://hotelmahadevrishikesh.com"),
   title: {
-    default: "Experience the Soul of Himalayan Wellness in Rishikesh.   Our wellness retreat packages are thoughtfully designed to rejuvenate your body, mind, and spirit amidst the tranquil beauty of the Himalayas. Each retreat offers a holistic blend of daily yoga and meditation sessions led by experienced instructors",
-    template: "%s | Himalayan Wellness Retreats",
+    default: "Stay Blessed in the Heart of Rishikesh.At Hotel Mahadev Rishikesh, every moment is crafted to offer you more than just a stay—it’s an experience. ",
+    template: "%s | Hotel Mahadev",
   },
   description:
-    "Experience the Soul of Himalayan Wellness in Rishikesh.   Our wellness retreat packages are thoughtfully designed to rejuvenate your body, mind, and spirit amidst the tranquil beauty of the Himalayas. Each retreat offers a holistic blend of daily yoga and meditation sessions led by experienced instructors",
+    "Stay Blessed in the Heart of Rishikesh.At Hotel Mahadev Rishikesh, every moment is crafted to offer you more than just a stay—it’s an experience. Nestled in the serene beauty of the Himalayas and blessed by the sacred Ganga, we bring together comfort, warmth, and divine tranquility. Whether you seek relaxation, adventure, or spiritual connection, your journey begins with us—where hospitality meets harmony",
   keywords:
-    "himalayanwellnessretreats, rishikesh, Yoga, website, rishikesh yoga,meditation, Ayurveda, india, India",
+    "hotel mahadev rishikesh, Yoga, website, rishikesh yoga,meditation, Ayurveda, india, India",
   icons: { apple: "/apple-touch-icon.png" },
   manifest: "/site.webmanifest",
   openGraph: {
-    title: "Himalayan Wellness Retreats - Yoga, Meditation, Ayurveda",
+    title: "Hotel Mahadev - Yoga, Meditation, Ayurveda",
     description:
-      "Experience the Soul of Himalayan Wellness in Rishikesh.   Our wellness retreat packages are thoughtfully designed to rejuvenate your body, mind, and spirit amidst the tranquil beauty of the Himalayas. Each retreat offers a holistic blend of daily yoga and meditation sessions led by experienced instructors",
+      "Stay Blessed in the Heart of Rishikesh.At Hotel Mahadev Rishikesh, every moment is crafted to offer you more than just a stay—it’s an experience. Nestled in the serene beauty of the Himalayas and blessed by the sacred Ganga, we bring together comfort, warmth, and divine tranquility. Whether you seek relaxation, adventure, or spiritual connection, your journey begins with us—where hospitality meets harmony",
     images: ["/logo.png"],
-    url: "https://www.himalayanwellnessretreats.com/",
-    site_name: "Himalayan Wellness Retreats",
+    url: "https://hotelmahadevrishikesh.com/",
+    site_name: "Hotel Mahadev",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Himalayan Wellness Retreats - Yoga, Meditation, Ayurveda",
+    title: "Hotel Mahadev - Yoga, Meditation, Ayurveda",
     description:
-      "Experience the Soul of Himalayan Wellness in Rishikesh.   Our wellness retreat packages are thoughtfully designed to rejuvenate your body, mind, and spirit amidst the tranquil beauty of the Himalayas. Each retreat offers a holistic blend of daily yoga and meditation sessions led by experienced instructors",
+      "Stay Blessed in the Heart of Rishikesh.At Hotel Mahadev Rishikesh, every moment is crafted to offer you more than just a stay—it’s an experience. Nestled in the serene beauty of the Himalayas and blessed by the sacred Ganga, we bring together comfort, warmth, and divine tranquility. Whether you seek relaxation, adventure, or spiritual connection, your journey begins with us—where hospitality meets harmony   Our wellness retreat packages are thoughtfully designed to rejuvenate your body, mind, and spirit amidst the tranquil beauty of the Himalayas. Each retreat offers a holistic blend of daily yoga and meditation sessions led by experienced instructors",
     images: ["/logo.png"],
   },
   other: {
-    "author": "Himalayan Wellness Retreats",
+    "author": "Hotel Mahadev",
     "robots": "index, follow",
     "viewport": "width=device-width, initial-scale=1",
   },
 };
-
-import { CartProvider } from "../context/CartContext";
 
 export default function RootLayout({ children }) {
   const isPaid = process.env.NEXT_PUBLIC_IS_PAID === "true";
@@ -52,7 +50,7 @@ export default function RootLayout({ children }) {
     <html lang="en" suppressHydrationWarning>
       <body className={`font-gilda`}>
         {isPaid ? (
-          <CartProvider>
+          <>
             <NextTopLoader color="#006eff" height={3} showSpinner={false} zIndex={1600} />
             <Toaster position="top-center" reverseOrder={false} toastOptions={{ duration: 3000, style: { fontFamily: "var(--font-GildaDisplay)" } }} />
             <SessionWrapper>
@@ -66,7 +64,8 @@ export default function RootLayout({ children }) {
                 <Footer />
               </SearchProvider>
             </SessionWrapper>
-          </CartProvider>
+          </>
+
         ) : (
           <div className="flex items-center justify-center h-screen">
             <h1 className="text-2xl font-bold text-black text-center">
