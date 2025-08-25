@@ -66,7 +66,7 @@ const Activity = ({ data }) => {
                       <div className="flex justify-between items-center mt-6">
                         <div className="flex gap-2">
                           <hr className="my-6 border-t border-black w-10" />
-                          <img src="/A1.jpg" alt="Logo Image" className="h-16 w-auto" />
+                          <img src="/logo.png" alt="Logo Image" className="h-16 w-auto" />
                         </div>
                         <span className="text-7xl text-black font-serif">”</span>
                       </div>

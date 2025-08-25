@@ -80,7 +80,7 @@ const Footer = () => {
                     <Link href={'/faq'} className="block text-white font-barlow ">FAQ</Link>
                 </div>
 
-                <div className="flex flex-col gap-2">
+                <div className="flex flex-col gap-2 p-3">
                     <h1 className="font-semibold text-xl flex items-center gap-2"> More Inquiry</h1>
                     <div className="flex md:flex-row flex-col items-center gap-2">
                         <Link href={'tel:+911354053504'} className="gap-2 block rounded-full py-1 font-barlow text-white flex items-center">
