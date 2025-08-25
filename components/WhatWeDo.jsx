@@ -24,10 +24,10 @@ const WhatWeDo = () => {
       <div className="relative w-full md:h-[320px] h-[100px] flex items-center justify-center">
         <Image src="/bg7.jpg" alt="Banner" layout="fill" className="z-0 md:object-cover object-contain" priority />
         <div className="hidden md:flex absolute left-[10%] top-10 z-10 container w-fit mx-auto px-4 flex-col justify-center h-full bg-[#fcf7f1] rounded-xl">
-          <div className="max-w-2xl flex flex-col items-center justify-center px-10">
-            <h1 className="text-3xl  font-semibold text-black mb-2 drop-shadow-lg">The Impact of What We Do How <br /> We Make a Difference</h1>
-            <div className="w-96 rounded-lg overflow-hidden">
-              <Image src="/pic7.webp" alt="Intro" width={300} height={300} className="object-cover w-full h-full" />
+          <div className="max-w-2xl flex flex-col items-center justify-center px-10 py-2">
+            <h1 className="text-3xl font-semibold text-black mb-2 drop-shadow-lg">The Impact of What We Do How <br /> We Make a Difference</h1>
+            <div className="w-[350px] rounded-lg overflow-hidden">
+              <Image src="/whatWe.jpg" alt="Intro" width={350} height={250} className="object-cover w-full h-full" />
             </div>
           </div>
         </div>
@@ -37,7 +37,7 @@ const WhatWeDo = () => {
           <div className="w-full flex flex-col items-center justify-center">
             <h1 className="text-xl font-semibold text-black text-center mb-2 drop-shadow-lg">The Impact of What We Do How <br /> We Make a Difference</h1>
             <div className="w-full rounded-lg overflow-hidden">
-              <Image src="/pic7.webp" alt="Intro" width={300} height={300} className="object-cover w-full h-full" />
+              <Image src="/whatWe.jpg" alt="Intro" width={350} height={250} className="object-cover w-full h-full" />
             </div>
           </div>
         </div>
@@ -72,7 +72,7 @@ const WhatWeDo = () => {
                     <div className="flex justify-between items-center mt-6">
                       <div className="flex gap-2">
                         <hr className="my-6 border-t border-black w-10" />
-                        <img src="/A1.jpg" alt="Logo Image" className="h-16 w-auto" />
+                        <img src="/logo.png" alt="Logo Image" className="h-16 w-auto" />
                       </div>
 
                       <span className="md:text-7xl text-5xl text-black font-serif">”</span>
@@ -126,14 +126,14 @@ const WhatWeDo = () => {
               </div>
             </div>
             {/* Right Side - keep width fixed and separated */}
-            <div className="lg:w-5/12 w-full flex items-center justify-center sticky top-20 self-start p-10 md:p-0">
-              <div className="w-full max-w-md rounded-xl overflow-hidden bg-white shadow-lg">
+            <div className="lg:w-5/12 w-full flex items-center justify-center sticky top-20 p-10 self-start md:p-0">
+              <div className="w-full max-w-md rounded-xl overflow-hidden">
                 <Image
                   src="/what.jpg"
                   alt="Rishikesh"
                   width={600}
                   height={800}
-                  className="object-cover w-full h-auto"
+                  className="object-contain w-full"
                   style={{ aspectRatio: '3/4' }}
                   priority
                 />
@@ -142,9 +142,6 @@ const WhatWeDo = () => {
           </div>
         </div>
       </section>
-
-
-
       {/* Get in Touch Section */}
       <div className="">
         <section className="w-full bg-black py-5 text-white flex flex-col md:flex-row items-center justify-between md:px-24 md:gap-6 gap-2">
