@@ -27,7 +27,7 @@ const WhatWeDo = () => {
           <div className="max-w-2xl flex flex-col items-center justify-center px-10">
             <h1 className="text-3xl  font-semibold text-black mb-2 drop-shadow-lg">The Impact of What We Do How <br /> We Make a Difference</h1>
             <div className="w-96 rounded-lg overflow-hidden">
-              <Image src="/pic7.png" alt="Intro" width={300} height={300} className="object-cover w-full h-full" />
+              <Image src="/pic7.webp" alt="Intro" width={300} height={300} className="object-cover w-full h-full" />
             </div>
           </div>
         </div>
@@ -37,7 +37,7 @@ const WhatWeDo = () => {
           <div className="w-full flex flex-col items-center justify-center">
             <h1 className="text-xl font-semibold text-black text-center mb-2 drop-shadow-lg">The Impact of What We Do How <br /> We Make a Difference</h1>
             <div className="w-full rounded-lg overflow-hidden">
-              <Image src="/pic7.png" alt="Intro" width={300} height={300} className="object-cover w-full h-full" />
+              <Image src="/pic7.webp" alt="Intro" width={300} height={300} className="object-cover w-full h-full" />
             </div>
           </div>
         </div>

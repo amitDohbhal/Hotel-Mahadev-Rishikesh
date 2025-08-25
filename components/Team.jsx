@@ -28,13 +28,12 @@ const Team = () => {
   return (
     <div className="w-full min-h-screen bg-[#fcf7f1]">
       {/* Banner */}
-      <div className="relative w-full md:h-[350px] h-[100px]">
+      <div className="relative w-full md:h-[400px] h-[100px]">
         <Image
           src="/bg2.jpg"
           alt="Team Banner"
-          width={1920}
-          height={1080}
-          className="z-0 md:object-cover object-contain"
+          layout="fill"
+          className="z-0 md:object-cover object-cover"
           priority
         />
       </div>
@@ -43,39 +42,39 @@ const Team = () => {
         <div className="container mx-auto ">
           <div className="flex flex-col lg:flex-row gap-8 mb-10 items-start">
             {/* Left: Heading and Paragraph */}
-            <div className="w-full lg:w-[60%]">
-              <h2 className="pacifico-h2 text-green-800 text-xl md:text-4xl my-4">Experience You Can Trust. Where Expertise Meets Himalayan Spirit.</h2>
-              <p className="md:text-xl text-gray-700 mb-4 w-full lg:w-[90%]">
+            <div className={`${teamMembers.length === 0 ? 'w-full' : 'w-full lg:w-1/2'}`}>
+              <h2 className="pacifico-h2 text-green-800 text-xl md:text-4xl my-4">Experience You Can Trust. Where Expertise Meets Himalayan Spirit.</h2>
+              <p className="md:text-xl text-gray-700 mb-4 w-full">
                 In the hotel industry, true strength lies in the dedication and vision of its management teams — passionate hoteliers and hospitality professionals who combine expertise in guest care, operations, and service excellence. More than managers, they are hosts who create environments where every guest feels valued, comfortable, and connected. With a balance of global standards and local traditions, effective hotel management ensures that each stay is not just about accommodation, but about delivering authentic, memorable, and enriching experiences.
               </p>
             </div>
             {/* Right: Two Images in a row (first two team members) */}
-            <div className=" hidden md:flex w-full lg:w-[43%] flex-row gap-8 items-start justify-center">
-              {loading ? (
-                <div>Loading Team Member...</div>
-              ) : teamMembers.length > 0 ? (
-                teamMembers.slice(0, 2).map((member, idx) => (
-                  <div key={member._id || idx} className="flex flex-col items-center">
-                    <div className={`relative w-72 h-72 rounded-2xl overflow-hidden shadow-lg ${idx === 0 ? "bg-[#f6e9da]" : "bg-[#d6f0fa]"} flex items-center justify-center`}>
-                      <Image src={member.image?.url || "/placeholder.jpeg"} alt={member.title} width={224} height={224} className="object-cover w-full h-full" />
+            {teamMembers.length > 0 && (
+              <div className="hidden md:flex w-full lg:w-1/2 flex-row gap-8 items-start justify-center">
+                {loading ? (
+                  <div>Loading Team Member...</div>
+                ) : (
+                  teamMembers.slice(0, 2).map((member, idx) => (
+                    <div key={member._id || idx} className="flex flex-col items-center">
+                      <div className={`relative w-72 h-72 rounded-2xl overflow-hidden shadow-lg ${idx === 0 ? "bg-[#f6e9da]" : "bg-[#d6f0fa]"} flex items-center justify-center`}>
+                        <Image src={member.image?.url || "/placeholder.jpeg"} alt={member.title} width={224} height={224} className="object-cover w-full h-full" />
+                      </div>
+                      <div className="mt-3 text-center">
+                        <div className="font-bold text-lg">{member.title}</div>
+                        <div className="text-xs text-gray-600">{member.designation}</div>
+                      </div>
                     </div>
-                    <div className="mt-3 text-center">
-                      <div className="font-bold text-lg">{member.title}</div>
-                      <div className="text-xs text-gray-600">{member.designation}</div>
-                    </div>
-                  </div>
-                ))
-              ) : (
-                <div>No team members found.</div>
-              )}
-            </div>
+                  ))
+                )}
+              </div>
+            )}
           </div>
-
           {/* Team Grid (remaining team members) */}
           <div className="hidden md:flex grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 gap-8 mb-10">
-            {loading ? (
+          {teamMembers.length > 0 && (
+            loading ? (
               <div>Loading...</div>
-            ) : teamMembers.length > 2 ? (
+            ) : teamMembers.length > 2 && (
               teamMembers.slice(2).map((member, idx) => (
                 <div key={member._id || idx} className="flex flex-col items-center">
                   <div className="w-72 h-72 rounded-2xl overflow-hidden shadow-lg bg-[#d6f0fa] flex items-center justify-center">
@@ -87,14 +86,15 @@ const Team = () => {
                   </div>
                 </div>
               ))
-            ) : null}
-          </div>
-
+            )
+          )}
+            </div>
           {/* Team Grid (remaining team members for mobile) */}
           <div className="md:hidden grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 md:gap-8 gap-4 mb-10">
-            {loading ? (
+          {teamMembers.length > 0 && (
+            loading ? (
               <div>Loading Team Members...</div>
-            ) : teamMembers.length > 0 ? (
+            ) : teamMembers.length > 0 && (
               teamMembers.map((member, idx) => (
                 <div key={member._id || idx} className="flex flex-col items-center">
                   <div className="md:w-72 w-full h-full md:h-72 rounded-2xl overflow-hidden shadow-lg bg-[#d6f0fa] flex items-center justify-center">
@@ -106,10 +106,11 @@ const Team = () => {
                   </div>
                 </div>
               ))
-            ) : null}
+            )
+          )}
           </div>
           <div className="mb-10 md:text-base text-gray-700">
-            In the Hotel Mahadev, true strength lies in the dedication and vision of its management teams — passionate hoteliers and hospitality professionals who bring expertise in guest care, operations, and service excellence. From the very first welcome, guests are embraced with warmth, comfort, and a sense of belonging. Beyond accommodations, management ensures that every stay becomes a journey of discovery—inviting guests to explore local culture, cuisine, and unique experiences that leave lasting impressions.
+            In the Hotel Mahadev, true strength lies in the dedication and vision of its management teams — passionate hoteliers and hospitality professionals who bring expertise in guest care, operations, and service excellence. From the very first welcome, guests are embraced with warmth, comfort, and a sense of belonging. Beyond accommodations, management ensures that every stay becomes a journey of discovery—inviting guests to explore local culture, cuisine, and unique experiences that leave lasting impressions.
           </div>
 
           {/* Contributions Section */}
