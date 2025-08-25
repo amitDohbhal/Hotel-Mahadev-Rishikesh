@@ -266,10 +266,6 @@ const productInfo = ({ roomData, roomId }) => {
     if (!files.length) return;
     // Determine current sub images state based on edit mode
     const currentSubImages = editGallery ? editSubImages : selectedSubImages;
-    if (currentSubImages.length + files.length > 10) {
-      toast.error('You can only add up to 10 sub images.');
-      return;
-    }
     setSubImagesUploading(true);
     try {
       const uploaded = [];
@@ -593,7 +589,7 @@ const productInfo = ({ roomData, roomId }) => {
                         >
                           {subImagesUploading ? 'Uploading...' : ((editGallery ? editSubImages : selectedSubImages).length > 0 ? 'Add More Images' : 'Choose Images')}
                         </Button>
-                        <div className="text-xs text-gray-500 mt-1">Max 10 images. Selected: {(editGallery ? editSubImages : selectedSubImages).length}</div>
+                        <div className="text-xs text-gray-500 mt-1">Images Selected: {(editGallery ? editSubImages : selectedSubImages).length}</div>
                       </div>
                     </div>
                     {/* Submit Button */}

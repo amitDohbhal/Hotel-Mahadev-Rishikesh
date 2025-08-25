@@ -48,7 +48,7 @@ function SectionContent({ section, orderId, onViewOrder, onBackHome, showOrderDe
           <p className="mb-4">Thank you for choosing our platform. We’re thrilled to have you with us and are committed to making your experience smooth, secure, and user-friendly. Your dashboard is now ready and designed to give you quick, easy access to everything you need — all in one place.</p>
           <p className="mb-4">Whether you’re here to explore, manage your services, or simply stay connected, we’ve built this space with your convenience in mind. If you ever need assistance, our team is always here to help.</p>
           <p className="mb-4">We look forward to serving you and being a part of your journey.</p>
-          <p className="mt-6 font-semibold">Warm regards,<br/>Himalayan Wellness Retreat Team</p>
+          <p className="mt-6 font-semibold">Warm regards,<br/>Hotel Mahadev Rishikesh Team</p>
         </div>
       </div>
     );

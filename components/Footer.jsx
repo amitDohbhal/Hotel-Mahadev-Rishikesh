@@ -280,12 +280,12 @@ const Footer = () => {
                 <CardContent className="flex flex-col lg:flex-row items-start justify-between">
                     <div className="text-justify">
                         <Image src="/logo.png" width={200} height={200} alt="footer" />
-                        <p className="text-black font-semibold text-sm lg:w-[40vw] xl:w-[35vw] font-barlow mt-6">
+                        <p className="text-black text-sm lg:w-[40vw] xl:w-[35vw] font-barlow mt-6">
                             ✨ At Hotel Mahadev Rishikesh, we offer more than a stay—we offer an awakening. Reconnect with yourself in the lap of the Himalayas, where warm hospitality, nourishing meals, and soulful experiences await. Explore Rishikesh’s sacred charm with guided walks, temple visits, and the mesmerizing Ganga Aarti, then return to serene accommodations that breathe peace into your journey.
                             <br />
                             🌿 Step into our Deluxe Premium Rooms, where comfort meets elegance. With spacious living areas, rich wooden flooring, and large windows opening to nature’s light, every detail is designed to exceed expectations—ensuring an unforgettable experience.
                             <br />
-                            🙏 Thank you for choosing Hotel Mahadev Rishikesh. May your stay be as memorable as it is enriching.
+                            🙏 Thank you for choosing Hotel Mahadev Rishikesh. May your stay be as memorable as it is enriching.
 
                         </p>
                         <p className="text-black font-semibold text-sm lg:w-[40vw] xl:w-[35vw] font-barlow mt-5">Our website is your gateway to the heart of Rishikesh, offering rich and soulful handmade creations crafted by local artisans.</p>

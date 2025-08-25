@@ -628,6 +628,9 @@ const InstaBlog = () => {
                     </Carousel>
                 </div>
             </div>
+            {/* Elfsight Instagram Feed | Untitled Instagram Feed */}
+            <script src="https://elfsightcdn.com/platform.js" async></script>
+            <div className="elfsight-app-f3d72bbf-c6f3-4365-b085-1748da12dcfd" data-elfsight-app-lazy></div>
             {/* News Quick View Modal */}
             {quickViewNews && (
                 <ViewNews news={quickViewNews} onClose={() => setQuickViewNews(null)} />

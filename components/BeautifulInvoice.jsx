@@ -12,7 +12,7 @@ export default function BeautifulInvoice({ booking, bookingId, bookingDate,invoi
   const hotel = {
     name: "Hotel Mahadev Rishikesh",
     address: "Rishikesh, Uttarakhand 249201, India",
-    phone: "+91 9897515305",
+    phone: "+91 9927677716",
     email: "hotelmahadev.rishikesh@gmail.com",
   };
 
