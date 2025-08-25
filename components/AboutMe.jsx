@@ -53,7 +53,8 @@ const AboutMe = () => {
         <Image
           src="/bg1.jpg"
           alt="About Banner"
-          layout="fill"
+          width={1920}
+          height={1080}
           className="z-0 md:object-cover object-contain"
           priority
         />

@@ -7,13 +7,14 @@ import Banner from "@/components/Banner";
 import ChatBot from "@/components/ChatBot";
 import PopUpBanner from "@/components/PopUpBanner";
 import Social from "@/components/Social";
-
+import RoomSection from "@/components/RoomSection";
 export default async function Home() {
   return (
     <>
       <PopUpBanner />
       <HeroSection />
       <Boxes />
+      <RoomSection />
       <AboutUsSection />
       <Banner />
       {/* <RandomTourPackageSection />   */}

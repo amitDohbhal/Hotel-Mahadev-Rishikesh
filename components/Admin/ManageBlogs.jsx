@@ -50,10 +50,6 @@ const Blogs = () => {
     const handleImageChange = async (e) => {
         const files = Array.from(e.target.files);
         if (!files.length) return;
-        if (selectedImages.length + files.length > 10) {
-            toast.error('You can only upload up to 10 images.');
-            return;
-        }
         setImageUploading(true);
         setUploadProgress(0);
         try {

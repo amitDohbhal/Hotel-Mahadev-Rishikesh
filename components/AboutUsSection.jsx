@@ -69,7 +69,7 @@ const AboutUsSection = () => {
     return (
         <section className="bg-[#f8f9f6] relative py-10 w-full px-10 md:px-5 overflow-hidden max-w-screen overflow-x-hidden">
             <div className="w-full">
-                <h2 className="pacifico-h2 text-green-800 text-xl md:text-3xl  text-center mt-2 md:mt-7 uppercase">
+                <h2 className="pacifico-h2 text-green-800 text-xl md:text-3xl text-center mt-2 uppercase">
                     <span className="">Stay Blessed in the Heart of Rishikesh.</span>
                 </h2>
                 <p className="text-md font-lg md:text-xl text-center mt-2">
