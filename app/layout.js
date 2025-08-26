@@ -12,11 +12,11 @@ import GoogleTranslate from "@/components/GoogleTranslate";
 export const metadata = {
   metadataBase: new URL("https://hotelmahadevrishikesh.com"),
   title: {
-    default: "Stay Blessed in the Heart of Rishikesh.At Hotel Mahadev Rishikesh, every moment is crafted to offer you more than just a stay—it’s an experience. ",
+    default: "Hotel Mahadev Rishikesh +91 9557701203 Luxury Hotel in Rishikesh - Best Hotel In Rishikesh - Budget Hotel In Rishikesh Hotel having all the amenities of the highest quality standard. Stay with Us: Hotel Mahadev ( a Boutique Hotel ) Luxury Premium Hotel in Rishikesh More Inquiry Call +91 1354053504, +91 955770120, +91 9927677716Email:  hotelmahadev.rishikesh@gmail.com Hotel Address : NH-7, Rishikesh Delhi Highway Above Reliance Store Adjacent to Neem Karoli Temple Rishikesh 249203 (Uttarakhand)",
     template: "%s | Hotel Mahadev",
   },
   description:
-    "Stay Blessed in the Heart of Rishikesh.At Hotel Mahadev Rishikesh, every moment is crafted to offer you more than just a stay—it’s an experience. Nestled in the serene beauty of the Himalayas and blessed by the sacred Ganga, we bring together comfort, warmth, and divine tranquility. Whether you seek relaxation, adventure, or spiritual connection, your journey begins with us—where hospitality meets harmony",
+    "Hotel Mahadev Rishikesh, Luxury Hotel in Rishikesh, Best Hotel In Rishikesh, Budget Hotel In Rishikesh, Hotel having all the amenities of the highest quality standard. Stay with Us: Hotel Mahadev ( a Boutique Hotel ) Luxury Premium Hotel in Rishikesh More Inquiry Call +91 1354053504, +91 955770120, +91 9927677716Email:  hotelmahadev.rishikesh@gmail.com Hotel Address : NH-7, Rishikesh Delhi Highway Above Reliance Store Adjacent to Neem Karoli Temple Rishikesh 249203 (Uttarakhand)",
   keywords:
     "hotel mahadev rishikesh, Yoga, website, rishikesh yoga,meditation, Ayurveda, india, India",
   icons: { apple: "/apple-touch-icon.png" },
@@ -24,7 +24,7 @@ export const metadata = {
   openGraph: {
     title: "Hotel Mahadev - Yoga, Meditation, Ayurveda",
     description:
-      "Stay Blessed in the Heart of Rishikesh.At Hotel Mahadev Rishikesh, every moment is crafted to offer you more than just a stay—it’s an experience. Nestled in the serene beauty of the Himalayas and blessed by the sacred Ganga, we bring together comfort, warmth, and divine tranquility. Whether you seek relaxation, adventure, or spiritual connection, your journey begins with us—where hospitality meets harmony",
+      "Hotel Mahadev Rishikesh, +91 9557701203 Luxury Hotel in Rishikesh, Best Hotel In Rishikesh, Budget Hotel In Rishikesh, Hotel having all the amenities of the highest quality standard. Stay with Us: Hotel Mahadev ( a Boutique Hotel ) Luxury Premium Hotel in Rishikesh More Inquiry Call +91 1354053504, +91 955770120, +91 9927677716Email:  hotelmahadev.rishikesh@gmail.com Hotel Address : NH-7, Rishikesh Delhi Highway Above Reliance Store Adjacent to Neem Karoli Temple Rishikesh 249203 (Uttarakhand)",
     images: ["/logo.png"],
     url: "https://hotelmahadevrishikesh.com/",
     site_name: "Hotel Mahadev",
@@ -33,7 +33,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Hotel Mahadev - Yoga, Meditation, Ayurveda",
     description:
-      "Stay Blessed in the Heart of Rishikesh.At Hotel Mahadev Rishikesh, every moment is crafted to offer you more than just a stay—it’s an experience. Nestled in the serene beauty of the Himalayas and blessed by the sacred Ganga, we bring together comfort, warmth, and divine tranquility. Whether you seek relaxation, adventure, or spiritual connection, your journey begins with us—where hospitality meets harmony   Our wellness retreat packages are thoughtfully designed to rejuvenate your body, mind, and spirit amidst the tranquil beauty of the Himalayas. Each retreat offers a holistic blend of daily yoga and meditation sessions led by experienced instructors",
+      "Hotel Mahadev Rishikesh, +91 9557701203 Luxury Hotel in Rishikesh, Best Hotel In Rishikesh, Budget Hotel In Rishikesh, Hotel having all the amenities of the highest quality standard. Stay with Us: Hotel Mahadev ( a Boutique Hotel ) Luxury Premium Hotel in Rishikesh More Inquiry Call +91 1354053504, +91 955770120, +91 9927677716Email:  hotelmahadev.rishikesh@gmail.com Hotel Address : NH-7, Rishikesh Delhi Highway Above Reliance Store Adjacent to Neem Karoli Temple Rishikesh 249203 (Uttarakhand)",
     images: ["/logo.png"],
   },
   other: {
