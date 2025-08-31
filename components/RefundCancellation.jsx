@@ -26,34 +26,40 @@ const RefundCancellation = () => {
               <li>The cancellation policy for some rates/offers and room category may differ from the standard cancellation policy of the hotel.</li>
             </ul>
           </div>
+          <div className="mt-5">
+            <strong>2. Refund Policy – Hotel Mahadev</strong>
+            <p className="mt-2">
+            At Hotel Mahadev, we strive to provide a fair and transparent process for all cancellations and refunds. In the event of a confirmed cancellation, the eligible refund amount (as per the booking and cancellation terms) will be processed within 7 working days from the date of approval. The refund will be credited back through the original mode of payment.
+            </p>
+          </div>
 
           {/* 2. Arrival and Departure Policy */}
           <div>
-            <strong>2. Arrival and Departure Policy</strong>
+            <strong>3. Arrival and Departure Policy</strong>
             <p className="mt-2">
               A recent Government notification requires guests to present proof of identity at the time of check in.
               Guests are requested to carry with them the required document during their travel.
             </p>
-            <p className="mt-5">
-              <strong>Early Arrivals and Late Departures:</strong>  
+            <div className="mt-5">
+              <strong>Early Arrivals and Late Departures:</strong>
               <p className="mt-2">
                 If you expect to arrive early in the day and would like immediate access to your room, we recommend booking the room for the prior night to guarantee immediate access. Similarly, for late departures, reserving an additional night will guarantee access to your guest room until you depart. If you choose not to reserve, we will be glad to store your luggage while you relax in the lobby.
               </p>
-            </p>
+            </div>
           </div>
 
-          {/* 3. Guarantee Policy */}
+          {/* 4. Guarantee Policy */}
           <div>
-            <strong>3. Guarantee Policy</strong>
+            <strong>4. Guarantee Policy</strong>
             <ul className="list-disc pl-6 mt-2 space-y-2">
               <li>All bookings must be guaranteed at time of reservation by Credit Card or Travel Agency. All major credit cards are accepted.</li>
               <li>At Hotel Mahadev Rishikesh, a guaranteed reservation assures you of a room even if you check in late (after 6:00 pm), on receipt of advance payment. All reservations made through the website must be guaranteed by a major credit card. Deposits are required for confirmed bookings only. Please check for full deposit requirements at time of booking.</li>
             </ul>
           </div>
 
-          {/* 4. Credit Cards */}
+          {/* 5. Credit Cards */}
           <div>
-            <strong>4. Credit Cards</strong>
+            <strong>5. Credit Cards</strong>
             <ul className="list-disc pl-6 mt-2">
               <li>Visa and MasterCard</li>
             </ul>
@@ -61,7 +67,7 @@ const RefundCancellation = () => {
 
           {/* 5. Child Policy */}
           <div>
-            <strong>5. Child Policy</strong>
+            <strong>6. Child Policy</strong>
             <p className="mt-2">
               Hotel Mahadev Rishikesh charges no additional fee for children 5 years of age and younger occupying the same room as their parents or guardians (space permitting). Special rates may be available for children between 6–12 years occupying the same room as their parents or guardians. Meals for children can be availed on extra charges.
             </p>
@@ -69,7 +75,7 @@ const RefundCancellation = () => {
 
           {/* 6. Banking Policy */}
           <div>
-            <strong>6. Banking Policy</strong>
+            <strong>7. Banking Policy</strong>
             <p className="mt-2">
               We as a merchant shall be under no liability whatsoever in respect of any loss or damage arising directly or indirectly out of the decline of authorization for any Transaction, on Account of the Cardholder having exceeded the preset limit mutually agreed by us with our acquiring Bank from time to time.
             </p>
@@ -77,7 +83,7 @@ const RefundCancellation = () => {
 
           {/* 7. Disclaimer – Hotel Mahadev */}
           <div>
-            <strong>7. Disclaimer – Hotel Mahadev</strong>
+            <strong>8. Disclaimer – Hotel Mahadev</strong>
             <ul className="list-disc pl-6 mt-2 space-y-2">
               <li>All bookings at Hotel Mahadev are subject to availability and confirmation.</li>
               <li>The hotel reserves the right to modify, amend, or update the cancellation and refund policy without prior notice.</li>
