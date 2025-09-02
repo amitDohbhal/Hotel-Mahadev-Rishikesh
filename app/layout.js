@@ -1,4 +1,5 @@
 import "./globals.css";
+import Script from "next/script";
 import Header from "@/components/Header";
 import SessionWrapper from "@/components/SessionWrapper";
 import Footer from "@/components/Footer";
@@ -47,7 +48,18 @@ export default function RootLayout({ children }) {
   const isPaid = process.env.NEXT_PUBLIC_IS_PAID === "true";
 
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en">
+      <head>
+        <Script async src="https://www.googletagmanager.com/gtag/js?id=AW-11416702121" />
+        <Script id="google-analytics">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-11416702121');
+          `}
+        </Script>
+      </head>
       <body className={`font-gilda`}>
         {isPaid ? (
           <>
