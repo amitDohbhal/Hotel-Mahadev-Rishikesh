@@ -27,11 +27,10 @@ const RefundCancellation = () => {
             </ul>
           </div>
           <div className="mt-5">
-            <strong>2. Refund Policy – Hotel Mahadev</strong>
+            <strong>2. Refund Timeline </strong>
             <p className="mt-2">
-            At Hotel Mahadev, we strive to maintain a fair and transparent process for all cancellations and refunds. In the event of a confirmed cancellation, the eligible refund amount (as per the booking and cancellation terms) will be processed within 2  working days from the date of approval.
-            </p>
-            <p className='mt-2'>
+           At Hotel Mahadev, we ensure a fair and transparent process for all cancellations and refunds. Eligible refunds (as per booking and cancellation terms) are processed within 2 working days of approval and credited to the original mode of payment. Depending on the bank or payment gateway, the amount may reflect in your account within 24 hours once processed.
+              <br/>
             Once processed, the refund will be credited back through the original mode of payment. Please note, depending on the bank or payment gateway, the refunded amount may reflect in your account within 3 to 4 business working days.
             </p>
           </div>
