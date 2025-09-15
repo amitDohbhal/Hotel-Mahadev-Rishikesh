@@ -41,6 +41,7 @@ export const metadata = {
     "author": "Hotel Mahadev",
     "robots": "index, follow",
     "viewport": "width=device-width, initial-scale=1",
+    "google-site-verification": "6_QJXV2987SQyc7cIrGPFCU9Nuliyi2Litqn45vEGoE"
   },
 };
 
